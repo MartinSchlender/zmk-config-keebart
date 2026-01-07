@@ -33,15 +33,6 @@
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
                 }; 
-          tb: tap_behaviour{
-                compatible = "zmk,behavior-hold-tap";
-                label = "TAP_BEHAVIOUR";
-                #binding-cells = <2>;
-                tapping-term-ms = <220>;
-                quick-tap-ms = <150>;
-                flavor = "tap-preferred";
-                bindings = <&kp>, <&behavior>;
-                };
         };
         
         keymap {
@@ -56,7 +47,7 @@
 //                         | GUI | LWR | ALT/ENT |              |   SPC   | ALT/BKSP | RSE |
                         bindings = <
    &kp TAB        &kp Q &kp W &kp F    &kp P   &kp G         &trans  &trans   &kp J        &kp L          &kp U     &kp Y   &kp SEMI    &kp ESC
-   &tb LCTRL &caps_word &kp A &kp R &kp S    &kp T   &kp D         &trans  &trans   &kp H        &kp N          &kp E     &kp I   &kp O       &tp RCTRL SQT
+   &tp LCTRL &caps_word &kp A &kp R &kp S    &kp T   &kp D         &trans  &trans   &kp H        &kp N          &kp E     &kp I   &kp O       &tp RCTRL SQT
    &kp LSHFT      &kp Z &kp X &kp C    &kp V   &kp B                          &kp K        &kp M          &kp COMMA &kp DOT &kp FSLH    &kp RSHFT
                               &kp LGUI &mo NUM &tp LALT RET                   &kp SPACE    &tp RALT BSPC  &mo FUNC
                         >;
