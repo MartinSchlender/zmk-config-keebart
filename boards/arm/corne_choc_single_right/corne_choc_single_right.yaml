@@ -1,5 +1,5 @@
 identifier: corne_choc_single_right
-name: Corne Choc Mod BT
+name: Corne Choc Single Right BT
 type: mcu
 arch: arm
 toolchain:
