@@ -4,7 +4,7 @@
 if BOARD_CORNE_CHOC_MOD_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Corne Choc Pro"
+	default "Corne Choc Mod"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
