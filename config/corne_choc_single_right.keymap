@@ -239,7 +239,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mt GLOBE TAB           &kp Y        &kp U         &kp I             &kp O     &kp P         &mt LEFT_SHIFT BACKSPACE
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mt LEFT_COMMAND ENTER  &kp H        &kp J         &kp K             &kp L     &kp UP_ARROW  &mt LEFT_ALT ESCAPE
 &trans  &trans  &trans  &trans  &trans  &trans                                  &kp N        &kp M         &dt_comma_period  &kp LEFT  &kp DOWN      &mt RCTRL RIGHT
-                        &trans  &trans  &trans                                  &lt 1 SPACE  &lt 2 C_MUTE  &lt 3 C_PP
+                        &trans  &trans  &trans                                  &lt 1 SPACE  &lt 2 C_MUTE  &mt LCTRL C_PP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -248,10 +248,10 @@
         lower_layer {
             display-name = "QUERTY L";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mt GLOBE C_VOL_UP         &kp Q   &kp W       &kp E       &kp R  &kp T  &dmt_shift_hash_amp
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mt LEFT_COMMAND C_VOL_DN  &kp A   &kp S       &kp D       &kp F  &kp G  &dmt_alt_excl_quest
-&trans  &trans  &trans  &trans  &trans  &trans                                     &kp Z   &kp X       &kp C       &kp V  &kp B  &dmt_ctrl_parentheses
-                        &trans  &trans  &trans                                     &trans  &kp C_PREV  &kp C_NEXT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mt GLOBE C_VOL_UP         &kp Q   &kp W       &kp E             &kp R  &kp T  &dmt_shift_hash_amp
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mt LEFT_COMMAND C_VOL_DN  &kp A   &kp S       &kp D             &kp F  &kp G  &dmt_alt_excl_quest
+&trans  &trans  &trans  &trans  &trans  &trans                                     &kp Z   &kp X       &kp C             &kp V  &kp B  &dmt_ctrl_parentheses
+                        &trans  &trans  &trans                                     &trans  &kp C_PREV  &mt C_NEXT LCTRL
             >;
         };
 
