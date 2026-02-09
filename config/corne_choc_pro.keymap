@@ -64,10 +64,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&num_lt  &to 3   &kp NUMBER_3  &kp NUMBER_6  &kp RA(NUMBER_4)  &kp RA(N5)    &trans  &trans  &none   &kp HOME        &kp UP_ARROW    &kp END          &none  &none
-&to 0    &trans  &kp GRAVE     &kp TILDE     &kp NUMBER_4      &kp NUMBER_5  &trans  &trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&to 2    &trans  &kp EQUAL     &trans        &kp RA(X)         &kp RA(C)                     &none   &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3     &none  &none
-                               &trans        &trans            &trans                        &trans  &trans          &trans
+&to 1  &none   &kp TILDE     &kp NUMBER_6  &kp RA(NUMBER_4)  &kp RA(N5)    &trans  &trans  &none   &kp HOME        &kp UP_ARROW    &kp END          &none  &none
+&to 0  &trans  &kp NUMBER_1  &kp RA(G)     &kp NUMBER_4      &kp NUMBER_5  &trans  &trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&to 2  &trans  &kp RA(Z)     &kp NUMBER_9  &kp RA(X)         &kp RA(C)                     &none   &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3     &none  &none
+                             &trans        &trans            &trans                        &trans  &trans          &trans
             >;
         };
 
