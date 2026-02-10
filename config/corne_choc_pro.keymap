@@ -47,10 +47,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&trans  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans  &trans  &kp NUMBER_4  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp KP_DIVIDE    &kp KP_MULTIPLY
-&trans  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans  &trans  &kp NUMBER_5  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp KP_SUBTRACT  &kp KP_PLUS
-&trans  &bt BT_CLR       &rgb_ug RGB_TOG  &sys_reset       &bootloader      &studio_unlock                   &kp NUMBER_0  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans           &kp KP_ENTER
-                                          &trans           &trans           &trans                           &trans        &trans            &trans
+&trans  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans  &trans  &kp NUMBER_4      &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp KP_DIVIDE    &kp KP_MULTIPLY
+&trans  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans  &trans  &kp NUMBER_5      &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp KP_SUBTRACT  &kp KP_PLUS
+&trans  &bt BT_CLR       &rgb_ug RGB_TOG  &sys_reset       &bootloader      &studio_unlock                   &kp LS(NUMBER_0)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans           &kp KP_ENTER
+                                          &trans           &trans           &trans                           &trans            &trans            &trans
             >;
         };
 
