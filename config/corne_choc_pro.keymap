@@ -83,10 +83,10 @@
 
         azertyos {
             bindings = <
-&trans  &kp B   &kp N2  &kp P   &kp O    &kp N7  &trans  &trans  &kp FSLH  &kp D   &kp L   &kp J  &kp W  &trans
-&trans  &kp Q   &kp U   &kp I   &kp E    &kp M   &trans  &trans  &kp C     &kp T   &kp S   &kp R  &kp N  &kp M
-&trans  &kp N0  &kp Y   &kp X   &kp DOT  &kp K                   &kp N4    &kp A   &kp G   &kp H  &kp F  &trans
-                        &trans  &trans   &trans                  &trans    &trans  &trans
+&trans        &kp B   &kp N2  &kp P   &kp O        &kp N7  &trans  &trans  &kp FSLH  &kp V   &kp D   &kp L  &kp J  &kp W
+&trans        &kp Q   &kp U   &kp I   &kp E        &kp M   &trans  &trans  &kp C     &kp T   &kp S   &kp R  &kp N  &kp M
+&mt LSHIFT Z  &kp N0  &kp Y   &kp X   &kp LS(DOT)  &kp K                   &kp N4    &kp A   &kp G   &kp H  &kp F  &mt RIGHT_SHIFT NUMBER_9
+                              &trans  &trans       &trans                  &trans    &trans  &trans
             >;
         };
     };
