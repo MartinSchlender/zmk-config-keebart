@@ -26,6 +26,15 @@
         };
     };
 
+    macros {
+        fullscreen: fullscreen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp UP>;
+            label = "FULLSCREEN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -73,10 +82,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp ESC        &kp INS     &kp HOME  &kp UP    &kp END    &kp PG_UP  &to 0   &to 0   &kp F1   &kp F2           &kp F3    &kp F4  &kp F5   &none
-&kp TAB        &none       &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans  &trans  &kp F6   &kp F7           &kp F8    &kp F9  &kp F10  &none
-&kp BACKSPACE  &kp DELETE  &none     &none     &none      &none                      &kp F11  &kp F12          &kp LGUI  &none   &none    &none
-                                     &trans    &trans     &trans                     &trans   &quicklayer 3 3  &trans
+&kp ESC        &kp INS     &kp HOME     &kp UP    &kp END    &kp PG_UP     &to 0   &to 0   &kp F1   &kp F2           &kp F3    &kp F4  &kp F5   &none
+&kp TAB        &none       &kp LEFT     &kp DOWN  &kp RIGHT  &kp PG_DN     &trans  &trans  &kp F6   &kp F7           &kp F8    &kp F9  &kp F10  &none
+&kp BACKSPACE  &kp DELETE  &fullscreen  &none     &none      &kp LEFT_WIN                  &kp F11  &kp F12          &kp LGUI  &none   &none    &none
+                                        &trans    &trans     &trans                        &trans   &quicklayer 3 3  &trans
             >;
         };
 
