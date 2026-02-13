@@ -26,6 +26,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        go-to-system {
+            bindings = <&to 4>;
+            key-positions = <28 39>;
+        };
+
+        reset {
+            bindings = <&sys_reset>;
+            key-positions = <0 13>;
+        };
+
+        go_home {
+            bindings = <&to 0>;
+            key-positions = <42 33>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -46,8 +65,8 @@
             >;
         };
 
-        sys_num {
-            display-name = "system_numeric";
+        numeric {
+            display-name = "numeric";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -56,15 +75,15 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&trans  &kp NUMBER_6  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(NUMBER_5)  &to 0   &to 0   &kp MINUS         &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp KP_DIVIDE    &kp KP_MULTIPLY
+&trans  &kp NUMBER_6  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(NUMBER_5)  &trans  &trans  &kp MINUS         &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp KP_DIVIDE    &kp KP_MULTIPLY
 &trans  &none         &kp RA(G)         &kp NUMBER_1      &kp NUMBER_4      &kp NUMBER_5      &trans  &trans  &kp V             &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp KP_SUBTRACT  &kp KP_PLUS
 &trans  &none         &kp NUMBER_2      &kp NUMBER_3      &kp RA(X)         &kp RA(C)                         &kp LS(NUMBER_0)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp N4           &kp N5
-                                        &trans            &trans            &trans                            &trans            &trans            &trans
+                                        &trans            &to 0             &trans                            &trans            &to 0             &trans
             >;
         };
 
-        sym_nav {
-            display-name = "symbol_navigate";
+        navigation {
+            display-name = "navigation";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -73,20 +92,30 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp ESC        &kp INS     &kp HOME     &kp UP    &kp END    &kp PG_UP     &to 0   &to 0   &kp F1   &kp F2           &kp F3    &kp F4  &kp F5   &none
-&kp TAB        &none       &kp LEFT     &kp DOWN  &kp RIGHT  &kp PG_DN     &trans  &trans  &kp F6   &kp F7           &kp F8    &kp F9  &kp F10  &none
-&kp BACKSPACE  &kp DELETE  &fullscreen  &none     &none      &kp LEFT_WIN                  &kp F11  &kp F12          &kp LGUI  &none   &none    &none
-                                        &trans    &trans     &trans                        &trans   &quicklayer 3 3  &trans
+&kp ESC        &kp INS     &kp HOME  &kp UP    &kp END    &kp PG_UP     &trans  &trans  &kp F1         &kp F2           &kp F3  &kp F4  &kp F5   &none
+&kp TAB        &none       &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN     &trans  &trans  &kp F6         &kp F7           &kp F8  &kp F9  &kp F10  &none
+&kp BACKSPACE  &kp DELETE  &none     &none     &none      &none                         &kp F11        &kp F12          &none   &none   &none    &none
+                                     &trans    &to 0      &kp LEFT_WIN                  &kp RIGHT_WIN  &quicklayer 3 3  &trans
             >;
         };
 
         mouse {
             display-name = "mouse";
             bindings = <
+&kp ESCAPE  &kp F11  &mkp MB5   &mkp MB4   &none  &kp HOME  &trans  &trans  &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none   &trans
+&kp TAB     &none    &mkp RCLK  &mkp MCLK  &none  &kp END   &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans
+&none       &none    &none      &none      &none  &kp ESC                   &none           &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans  &trans
+                                &trans     &mo 2  &trans                    &trans          &to 0           &trans
+            >;
+        };
+
+        system {
+            display-name = "system";
+            bindings = <
 &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none  &none   &bt BT_SEL 4  &bt BT_SEL 1  &to 0   &to 0   &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none   &trans
 &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &none  &none   &bt BT_SEL 3  &bt BT_SEL 0  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans
 &rgb_ug RGB_TOG  &rgb_ug RGB_TOG  &none  &none   &bt BT_SEL 2  &bt BT_CLR                    &none           &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans  &trans
-                                         &trans  &trans        &trans                        &trans          &trans          &trans
+                                         &trans  &to 0         &trans                        &trans          &to 0           &trans
             >;
         };
 
