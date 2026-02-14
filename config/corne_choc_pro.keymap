@@ -145,21 +145,21 @@
 
         Windows2 {
             display-name = "NUMBER + Symbol";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+             bindings = <
+&kp DE_BACKSLASH  &kp DE_AT            &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &kp DE_CARET  &bt BT_SEL 1  &kp DE_ACUTE         &kp N7        &kp N8        &kp N9  &kp N0       &kp BSPC
+&kp DE_PIPE       &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_HASH              &kp INS                   &kp DE_EURO     &bt BT_SEL 0  &bt BT_SEL 2  &kp DE_SINGLE_QUOTE  &kp NUMBER_4  &kp NUMBER_5  &kp N6  &kp DE_PLUS  &kp DE_SLASH
+&kp DE_TILDE      &kp DE_LBRC          &kp DE_RIGHT_BRACE    &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_PERCENT                              &kp DE_AMPERSAND     &kp N1        &kp N2        &kp N3  &kp N0       &kp DE_ASTERISK
+                                                             &trans                   &trans                    &trans                                      &kp DE_EQUAL         &trans        &trans
             >;
         };
 
         Windows3 {
             display-name = "Cursor+Fnn";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 3  &kp F7  &kp F8  &kp F9  &kp PRCNT              &none  &none  &none                    &kp C_PAUSE  &kp UP                   &kp PAGE_UP    &none                   &none
+&bt BT_SEL 1  &bt BT_SEL 4  &kp F4  &kp F5  &kp F6  &mt LEFT_GUI DE_PLUS   &none  &none  &mt LG(LSHIFT) NUMBER_4  &kp LEFT     &mt LEFT_GUI LEFT_ARROW  &kp RIGHT      &mt RG(LEFT_GUI) RIGHT  &kp GRAVE
+&bt BT_SEL 2  &bt BT_CLR    &kp F1  &kp F2  &kp F3  &mt LEFT_GUI DE_MINUS                &none                    &none        &kp DOWN                 &kp PAGE_DOWN  &none                   &kp DELETE
+                                    &trans  &trans  &trans                               &trans                   &trans       &trans
             >;
         };
 
