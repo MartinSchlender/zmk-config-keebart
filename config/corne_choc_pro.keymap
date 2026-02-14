@@ -15,23 +15,14 @@
 
 / {
     behaviors {
-        LGui: LGui {
+        HRM_All: HRM_All {
             compatible = "zmk,behavior-hold-tap";
-            label = "LGUI";
+            label = "HRM_ALL";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-        };
-
-        LCTRL: LCTRL {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LCTRL";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -48,15 +39,15 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE    &kp Q  &kp W  &kp E  &kp R             &kp T      &kp QUESTION     &kp DE_ASTERISK  &kp Z    &kp U            &kp I      &kp O    &kp P            &kp DE_U_UMLAUT
-&kp TAB       &kp A  &kp S  &kp D  &LGui LEFT_GUI F  &kp G      &kp EXCLAMATION  &kp DE_SLASH     &kp H    &kp J            &kp K      &kp L    &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp C_REPEAT  &kp Y  &kp X  &kp C  &kp V             &kp B                                        &kp N    &kp M            &kp COMMA  &kp DOT  &kp MINUS        &kp BACKSPACE
-                            &mo 1  &kp LEFT_SHIFT    &kp SPACE                                    &kp RET  &kp RIGHT_SHIFT  &mo 2
+&kp ESCAPE    &kp Q  &kp W                &kp E             &kp R                &kp T      &kp QUESTION     &kp DE_ASTERISK  &kp Z    &kp U                 &kp I                 &kp O                &kp P            &kp DE_U_UMLAUT
+&kp TAB       &kp A  &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &kp EXCLAMATION  &kp DE_SLASH     &kp H    &HRM_All RIGHT_GUI J  &HRM_All LCTRL RS(K)  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&kp C_REPEAT  &kp Y  &kp X                &kp C             &kp V                &kp B                                        &kp N    &kp M                 &kp COMMA             &kp DOT              &kp MINUS        &kp BACKSPACE
+                                          &mo 1             &kp LEFT_SHIFT       &kp SPACE                                    &kp RET  &kp RIGHT_SHIFT       &mo 2
             >;
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "NUMBER + Symbol";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -73,7 +64,7 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "Cursor+Fnn";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -82,9 +73,9 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 3  &kp F7  &kp F8  &kp F9  &kp PRCNT              &none  &none  &none                    &kp C_PAUSE  &kp UP                   &kp PAGE_UP    &kp RPAR                &kp BSPC
+&bt BT_SEL 0  &bt BT_SEL 3  &kp F7  &kp F8  &kp F9  &kp PRCNT              &none  &none  &none                    &kp C_PAUSE  &kp UP                   &kp PAGE_UP    &none                   &none
 &bt BT_SEL 1  &bt BT_SEL 4  &kp F4  &kp F5  &kp F6  &mt LEFT_GUI DE_PLUS   &none  &none  &mt LG(LSHIFT) NUMBER_4  &kp LEFT     &mt LEFT_GUI LEFT_ARROW  &kp RIGHT      &mt RG(LEFT_GUI) RIGHT  &kp GRAVE
-&bt BT_SEL 2  &bt BT_CLR    &kp F1  &kp F2  &kp F3  &mt LEFT_GUI DE_MINUS                &none                    &none        &kp DOWN                 &kp PAGE_DOWN  &kp PIPE                &kp TILDE
+&bt BT_SEL 2  &bt BT_CLR    &kp F1  &kp F2  &kp F3  &mt LEFT_GUI DE_MINUS                &none                    &none        &kp DOWN                 &kp PAGE_DOWN  &none                   &kp DELETE
                                     &trans  &trans  &trans                               &trans                   &trans       &trans
             >;
         };
