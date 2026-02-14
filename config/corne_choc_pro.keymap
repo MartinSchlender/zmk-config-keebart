@@ -26,6 +26,22 @@
         };
     };
 
+    macros {
+        SELECT: SELECT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(S) &kp LS(E) &kp LS(L) &kp LS(E) &kp LS(C) &kp LS(T) &kp SPACE &kp STAR &kp SPACE &kp LS(F) &kp LS(R) &kp LS(O) &kp LS(M) &kp SPACE>;
+            label = "SELECT";
+        };
+
+        INNER_JOIN: INNER_JOIN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(I) &kp LS(N) &kp LS(N) &kp LS(E) &kp LS(R) &kp SPACE &kp LS(J) &kp LS(O) &kp LS(I) &kp LS(N) &kp SPACE>;
+            label = "INNER_JOIN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -39,10 +55,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE    &kp Q  &kp W                &kp E             &kp R                &kp T      &kp QUESTION     &kp DE_ASTERISK  &kp Z    &kp U                 &kp I                 &kp O                &kp P            &kp DE_U_UMLAUT
-&kp TAB       &kp A  &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &kp EXCLAMATION  &kp DE_SLASH     &kp H    &HRM_All RIGHT_GUI J  &HRM_All LCTRL RS(K)  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp C_REPEAT  &kp Y  &kp X                &kp C             &kp V                &kp B                                        &kp N    &kp M                 &kp COMMA             &kp DOT              &kp MINUS        &kp BACKSPACE
-                                          &mo 1             &kp LEFT_SHIFT       &kp SPACE                                    &kp RET  &kp RIGHT_SHIFT       &mo 2
+&kp ESCAPE  &kp Q  &kp W                &kp E             &kp R                &kp T      &kp QUESTION     &kp DE_ASTERISK  &kp Z    &kp U                 &kp I                 &kp O                &kp P            &kp DE_U_UMLAUT
+&kp TAB     &kp A  &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &kp EXCLAMATION  &kp DE_SLASH     &kp H    &HRM_All RIGHT_GUI J  &HRM_All LCTRL RS(K)  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&sl 8       &kp Y  &kp X                &kp C             &kp V                &kp B                                        &kp N    &kp M                 &kp COMMA             &kp DOT              &kp MINUS        &kp BACKSPACE
+                                        &mo 1             &kp LEFT_SHIFT       &kp SPACE                                    &kp RET  &kp RIGHT_SHIFT       &mo 2
             >;
         };
 
@@ -81,7 +97,7 @@
         };
 
         extra_layer_1 {
-            display-name = "EXTRA 1";
+            display-name = "Mouse";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -90,8 +106,8 @@
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        Windows {
+            display-name = "QWERTZ";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -100,8 +116,8 @@
             >;
         };
 
-        extra_layer_3 {
-            display-name = "EXTRA 3";
+        Windows2 {
+            display-name = "NUMBER + Symbol";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -110,8 +126,8 @@
             >;
         };
 
-        extra_layer_4 {
-            display-name = "EXTRA 4";
+        Windows3 {
+            display-name = "Cursor+Fnn";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -120,8 +136,8 @@
             >;
         };
 
-        extra_layer_5 {
-            display-name = "EXTRA 5";
+        Windows4 {
+            display-name = "Mouse";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -130,13 +146,13 @@
             >;
         };
 
-        extra_layer_6 {
-            display-name = "EXTRA 6";
+        Sticky {
+            display-name = "Sticky";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &INNER_JOIN  &trans  &trans  &trans
+&trans  &trans  &SELECT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans
+&trans  &trans  &trans   &trans  &trans  &trans                  &trans  &trans  &trans       &trans  &trans  &trans
+                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
     };
