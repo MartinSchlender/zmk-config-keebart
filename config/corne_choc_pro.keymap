@@ -183,10 +183,10 @@
         Windows4 {
             display-name = "Mouse";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans
+&trans       &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &mkp MB2  &trans
+&trans       &trans  &trans    &trans    &trans    &trans                  &trans  &trans          &mmv MOVE_DOWN  &trans           &trans    &trans
+                               &trans    &trans    &trans                  &trans  &trans          &trans
             >;
         };
 
