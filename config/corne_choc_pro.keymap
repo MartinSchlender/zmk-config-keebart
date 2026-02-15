@@ -106,7 +106,7 @@
             >;
         };
 
-        lower_layer {
+        Mac_lower_layer {
             display-name = "NUMBER + Symbol";
 
             // -----------------------------------------------------------------------------------------
@@ -123,7 +123,7 @@
             >;
         };
 
-        raise_layer {
+        Mac_raise_layer {
             display-name = "Cursor+Fnn";
 
             // -----------------------------------------------------------------------------------------
@@ -133,14 +133,14 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 3  &kp F7  &kp F8  &kp F9  &kp PRCNT              &none  &none  &none                    &kp C_PAUSE  &kp UP                   &kp PAGE_UP    &none                   &none
-&bt BT_SEL 1  &bt BT_SEL 4  &kp F4  &kp F5  &kp F6  &mt LEFT_GUI DE_PLUS   &none  &none  &mt LG(LSHIFT) NUMBER_4  &kp LEFT     &mt LEFT_GUI LEFT_ARROW  &kp RIGHT      &mt RG(LEFT_GUI) RIGHT  &kp GRAVE
+&bt BT_SEL 0  &bt BT_SEL 3  &kp F7  &kp F8  &kp F9  &kp F10                &none  &none  &none                    &kp C_PAUSE  &kp UP                   &kp PAGE_UP    &none                   &none
+&bt BT_SEL 1  &bt BT_SEL 4  &kp F4  &kp F5  &kp F6  &mt LEFT_GUI DE_PLUS   &none  &none  &mt LG(LSHIFT) NUMBER_4  &kp LEFT     &mt LEFT_GUI LEFT_ARROW  &kp RIGHT      &mt RG(LEFT_GUI) RIGHT  &none
 &bt BT_SEL 2  &bt BT_CLR    &kp F1  &kp F2  &kp F3  &mt LEFT_GUI DE_MINUS                &none                    &none        &kp DOWN                 &kp PAGE_DOWN  &none                   &kp DELETE
                                     &trans  &trans  &trans                               &trans                   &trans       &trans
             >;
         };
 
-        extra_layer_1 {
+        Mac_extra_layer_1 {
             display-name = "Mouse";
             bindings = <
 &bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans
@@ -160,7 +160,7 @@
             >;
         };
 
-        Windows2 {
+        Windows_lower_layer {
             display-name = "NUMBER + Symbol";
             bindings = <
 &kp DE_BACKSLASH  &kp DE_AT            &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &kp DE_CARET  &bt BT_SEL 1  &kp DE_ACUTE         &kp N7        &kp N8        &kp N9  &kp N0       &kp BSPC
@@ -170,17 +170,17 @@
             >;
         };
 
-        Windows3 {
+        Windows_raise_layer {
             display-name = "Cursor+Fnn";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 3  &kp F7  &kp F8  &kp F9  &kp PRCNT              &none  &none  &none                    &kp C_PAUSE  &kp UP                   &kp PAGE_UP    &none                   &none
-&bt BT_SEL 1  &bt BT_SEL 4  &kp F4  &kp F5  &kp F6  &mt LEFT_GUI DE_PLUS   &none  &none  &mt LG(LSHIFT) NUMBER_4  &kp LEFT     &mt LEFT_GUI LEFT_ARROW  &kp RIGHT      &mt RG(LEFT_GUI) RIGHT  &kp GRAVE
-&bt BT_SEL 2  &bt BT_CLR    &kp F1  &kp F2  &kp F3  &mt LEFT_GUI DE_MINUS                &none                    &none        &kp DOWN                 &kp PAGE_DOWN  &none                   &kp DELETE
-                                    &trans  &trans  &trans                               &trans                   &trans       &trans
+&bt BT_SEL 0  &bt BT_SEL 3  &kp F7  &kp F8  &kp F9  &kp F10             &none  &none  &none            &kp C_PAUSE  &kp UP    &kp PAGE_UP    &none    &none
+&bt BT_SEL 1  &bt BT_SEL 4  &kp F4  &kp F5  &kp F6  &mt LCTRL DE_PLUS   &none  &none  &kp PRINTSCREEN  &kp LEFT     &kp HOME  &kp RIGHT      &kp END  &none
+&bt BT_SEL 2  &bt BT_CLR    &kp F1  &kp F2  &kp F3  &mt LCTRL DE_MINUS                &none            &none        &kp DOWN  &kp PAGE_DOWN  &none    &kp DELETE
+                                    &trans  &trans  &trans                            &trans           &trans       &trans
             >;
         };
 
-        Windows4 {
+        Windows_extra_layer_1 {
             display-name = "Mouse";
             bindings = <
 &bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans
