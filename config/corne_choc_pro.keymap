@@ -25,6 +25,13 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        CapsWord: CapsWord {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPSWORD";
+            #binding-cells = <0>;
+            continue-list = <A B>;
+        };
     };
 
     macros {
