@@ -215,10 +215,10 @@
         Sticky {
             display-name = "Sticky";
             bindings = <
-&trans  &trans  &Macro_WHERE   &trans  &trans  &trans        &trans  &trans  &trans  &trans  &Macro_INNER_JOIN  &trans            &trans  &trans
-&trans  &trans  &Macro_SELECT  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans             &Macro_Left_Join  &trans  &trans
-&trans  &trans  &trans         &trans  &trans  &Macro_BH4SF                  &trans  &trans  &trans             &trans            &trans  &trans
-                               &trans  &trans  &trans                        &trans  &trans  &trans
+&trans     &trans  &Macro_WHERE   &trans  &trans  &trans        &trans  &trans  &trans  &trans  &Macro_INNER_JOIN  &trans            &trans  &trans
+&trans     &trans  &Macro_SELECT  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans             &Macro_Left_Join  &trans  &trans
+&CapsWord  &trans  &trans         &trans  &trans  &Macro_BH4SF                  &trans  &trans  &trans             &trans            &trans  &trans
+                                  &trans  &trans  &trans                        &trans  &trans  &trans
             >;
         };
     };
