@@ -28,7 +28,7 @@
     };
 
     macros {
-        SELECT: SELECT {
+        Macro_SELECT: SELECT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -193,10 +193,10 @@
         Sticky {
             display-name = "Sticky";
             bindings = <
-&trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &INNER_JOIN  &trans      &trans  &trans
-&trans  &trans  &SELECT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &Left_Join  &trans  &trans
-&trans  &trans  &trans   &trans  &trans  &trans                  &trans  &trans  &trans       &trans      &trans  &trans
-                         &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &INNER_JOIN  &trans      &trans  &trans
+&trans  &trans  &Macro_SELECT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &Left_Join  &trans  &trans
+&trans  &trans  &trans         &trans  &trans  &trans                  &trans  &trans  &trans       &trans      &trans  &trans
+                               &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
     };
