@@ -144,6 +144,11 @@
             key-positions = <1 12>;
             layers = <4>;
         };
+
+        caps_lock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <41 44>;
+        };
     };
 
     keymap {
