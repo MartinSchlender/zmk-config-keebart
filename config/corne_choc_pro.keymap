@@ -112,7 +112,7 @@
         compatible = "zmk,keymap";
 
         Mac {
-            display-name = "QWERTZ";
+            display-name = "Mac-0";
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  | BSPC |
@@ -128,7 +128,7 @@
             >;
         };
 
-        Mac_lower_layer {
+        Mac-1 {
             display-name = "NUMBER + Symbol";
 
             // -----------------------------------------------------------------------------------------
@@ -145,7 +145,7 @@
             >;
         };
 
-        Mac_raise_layer {
+        Mac-2 {
             display-name = "Cursor+Fnn";
 
             // -----------------------------------------------------------------------------------------
@@ -162,7 +162,7 @@
             >;
         };
 
-        Mac_extra_layer_1 {
+        Mac-3 {
             display-name = "Mouse";
             bindings = <
 &bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans
@@ -172,7 +172,7 @@
             >;
         };
 
-        Windows {
+        Win-0 {
             display-name = "QWERTZ";
             bindings = <
 &kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &kp QUESTION     &kp DE_ASTERISK  &kp DE_Z  &kp U            &kp I                 &kp O                 &kp P            &kp DE_U_UMLAUT
@@ -182,7 +182,7 @@
             >;
         };
 
-        Windows_lower_layer {
+        Win-1 {
             display-name = "NUMBER + Symbol";
             bindings = <
 &kp DE_BACKSLASH  &kp DE_AT            &kp DE_DOUBLE_QUOTES                &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &kp DE_CARET  &bt BT_SEL 1  &kp DE_ACUTE         &kp N7                  &kp N8                   &kp N9                 &kp N0       &kp DE_CAPITAL_SHARP_S
@@ -192,7 +192,7 @@
             >;
         };
 
-        Windows_raise_layer {
+        Win-2 {
             display-name = "Cursor+Fnn";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 3  &kp F7  &kp F8  &kp F9  &kp F10             &none  &none  &none            &kp C_PAUSE  &kp UP    &kp PAGE_UP    &none    &none
@@ -202,7 +202,7 @@
             >;
         };
 
-        Windows_extra_layer_1 {
+        Win-3 {
             display-name = "Mouse";
             bindings = <
 &bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans
