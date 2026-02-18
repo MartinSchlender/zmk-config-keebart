@@ -155,9 +155,9 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 3  &kp F7  &kp F8  &kp F9  &kp F10                &none  &none  &none                    &kp C_PAUSE  &kp UP                   &kp PAGE_UP    &none                   &none
-&bt BT_SEL 1  &bt BT_SEL 4  &kp F4  &kp F5  &kp F6  &mt LEFT_GUI DE_PLUS   &none  &none  &mt LG(LSHIFT) NUMBER_4  &kp LEFT     &mt LEFT_GUI LEFT_ARROW  &kp RIGHT      &mt RG(LEFT_GUI) RIGHT  &none
-&bt BT_SEL 2  &bt BT_CLR    &kp F1  &kp F2  &kp F3  &mt LEFT_GUI DE_MINUS                &none                    &none        &kp DOWN                 &kp PAGE_DOWN  &none                   &kp DELETE
+&bt BT_SEL 0  &bt BT_SEL 3  &kp F7  &kp F8  &kp F9  &kp F10                &none  &none  &none                    &kp C_PAUSE  &kp UP                   &kp PAGE_UP    &none               &none
+&bt BT_SEL 1  &bt BT_SEL 4  &kp F4  &kp F5  &kp F6  &mt LEFT_GUI DE_PLUS   &none  &none  &mt LG(LSHIFT) NUMBER_4  &kp LEFT     &mt LEFT_GUI LEFT_ARROW  &kp RIGHT      &mt LEFT_GUI RIGHT  &none
+&bt BT_SEL 2  &bt BT_CLR    &kp F1  &kp F2  &kp F3  &mt LEFT_GUI DE_MINUS                &none                    &none        &kp DOWN                 &kp PAGE_DOWN  &none               &kp DELETE
                                     &trans  &trans  &trans                               &trans                   &trans       &trans
             >;
         };
