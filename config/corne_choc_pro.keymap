@@ -47,6 +47,15 @@
             #binding-cells = <0>;
             bindings = <&kp V>, <&kp LC(V)>;
         };
+
+        minus_under: minus_under {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MINUS_UNDER";
+            bindings = <&kp DE_MINUS>, <&kp DE_UNDER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -152,7 +161,7 @@
             bindings = <
 &kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U                 &kp I             &kp O                &kp P            &kp DE_U_UMLAUT
 &kp TAB     &kp A     &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LCTRL K  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8       &kp DE_Y  &kp X                &HRM_All LG(C) C  &tapdance_mac_V      &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &kp BACKSPACE
+&sl 8       &kp DE_Y  &kp X                &HRM_All LG(C) C  &tapdance_mac_V      &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &minus_under     &kp BACKSPACE
                                            &mo 1             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT       &mo 2
             >;
         };
@@ -206,7 +215,7 @@
             bindings = <
 &kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &kp QUESTION     &kp DE_ASTERISK  &kp DE_Z  &kp U            &kp I                 &kp O                 &kp P            &kp DE_U_UMLAUT
 &kp TAB     &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &kp G      &kp EXCLAMATION  &kp DE_SLASH     &kp H     &HRM_All LALT J  &HRM_All LCTRL RS(K)  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8       &kp DE_Y  &kp X                &kp C             &tapdance_win_v      &kp B                                        &kp N     &kp M            &kp COMMA             &kp DOT               &kp MINUS        &kp BACKSPACE
+&sl 8       &kp DE_Y  &kp X                &kp C             &tapdance_win_v      &kp B                                        &kp N     &kp M            &kp COMMA             &kp DOT               &minus_under     &kp BACKSPACE
                                            &mo 5             &kp LEFT_SHIFT       &kp SPACE                                    &kp RET   &kp RIGHT_SHIFT  &mo 6
             >;
         };
