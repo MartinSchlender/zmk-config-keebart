@@ -209,19 +209,19 @@
         Win-0 {
             display-name = "Win-0";
             bindings = <
-&kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &kp QUESTION     &kp DE_ASTERISK  &kp DE_Z  &kp U            &kp I                 &kp O                 &kp P            &kp DE_U_UMLAUT
-&kp TAB     &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &kp G      &kp EXCLAMATION  &kp DE_SLASH     &kp H     &HRM_All LALT J  &HRM_All LCTRL RS(K)  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8       &kp DE_Y  &kp X                &kp C             &tapdance_win_v      &kp B                                        &kp N     &kp M            &kp COMMA             &kp DOT               &none            &kp BACKSPACE
-                                           &mo 5             &kp LEFT_SHIFT       &kp SPACE                                    &kp RET   &kp RIGHT_SHIFT  &mo 6
+&kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &kp QUESTION     &kp DE_ASTERISK  &kp DE_Z  &kp U            &kp I             &kp O                 &kp P            &kp DE_U_UMLAUT
+&kp TAB     &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &kp G      &kp EXCLAMATION  &kp DE_SLASH     &kp H     &HRM_All LALT J  &HRM_All LCTRL K  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&sl 8       &kp DE_Y  &kp X                &kp C             &tapdance_win_v      &kp B                                        &kp N     &kp M            &kp COMMA         &kp DOT               &none            &kp BACKSPACE
+                                           &mo 6             &kp LEFT_SHIFT       &kp SPACE                                    &kp RET   &kp RIGHT_SHIFT  &mo 7
             >;
         };
 
         Win-1 {
             display-name = "Win-1";
             bindings = <
-&kp DE_BACKSLASH  &kp DE_AT            &kp DE_DOUBLE_QUOTES                &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &kp DE_CARET  &bt BT_SEL 1  &kp DE_ACUTE         &kp N7                  &kp N8                   &kp N9                 &kp N0       &kp DE_CAPITAL_SHARP_S
-&kp DE_PIPE       &kp DE_LEFT_BRACKET  &HRM_All LEFT_GUI DE_RIGHT_BRACKET  &HRM_All LCTRL DE_HASH   &HRM_All LEFT_ALT INS     &kp DE_EURO     &bt BT_SEL 0  &bt BT_SEL 2  &kp DE_SINGLE_QUOTE  &HRM_All LALT NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RIGHT_GUI N6  &kp DE_PLUS  &kp DE_SLASH
-&kp DE_TILDE      &kp DE_LBRC          &kp DE_RIGHT_BRACE                  &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_PERCENT                              &kp DE_AMPERSAND     &kp N1                  &kp N2                   &kp N3                 &kp N0       &kp DE_ASTERISK
+&kp DE_BACKSLASH  &kp DE_AT            &kp DE_DOUBLE_QUOTES                &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &kp DE_CARET  &bt BT_SEL 1  &kp DE_ACUTE         &kp N7                  &kp N8                   &kp N9                 &kp DE_CARET  &kp DE_CAPITAL_SHARP_S
+&kp DE_PIPE       &kp DE_LEFT_BRACKET  &HRM_All LEFT_GUI DE_RIGHT_BRACKET  &HRM_All LCTRL DE_HASH   &HRM_All LEFT_ALT INS     &kp DE_EURO     &bt BT_SEL 0  &bt BT_SEL 2  &kp DE_SINGLE_QUOTE  &HRM_All LALT NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RIGHT_GUI N6  &kp DE_PLUS   &kp DE_SLASH
+&kp DE_TILDE      &kp DE_LBRC          &kp DE_RIGHT_BRACE                  &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_PERCENT                              &kp DE_AMPERSAND     &kp N1                  &kp N2                   &kp N3                 &kp N0        &kp DE_ASTERISK
                                                                            &trans                   &trans                    &trans                                      &kp DE_EQUAL         &trans                  &trans
             >;
         };
@@ -229,18 +229,18 @@
         Win-2 {
             display-name = "Win-2";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 3  &kp F7  &kp F8  &kp F9  &kp F10             &none  &none  &none            &kp C_PAUSE  &kp UP    &kp PAGE_UP    &none    &none
-&bt BT_SEL 1  &bt BT_SEL 4  &kp F4  &kp F5  &kp F6  &mt LCTRL DE_PLUS   &none  &none  &kp PRINTSCREEN  &kp LEFT     &kp HOME  &kp RIGHT      &kp END  &none
-&bt BT_SEL 2  &bt BT_CLR    &kp F1  &kp F2  &kp F3  &mt LCTRL DE_MINUS                &none            &none        &kp DOWN  &kp PAGE_DOWN  &none    &kp DELETE
-                                    &trans  &trans  &trans                            &trans           &trans       &trans
+&bt BT_SEL 0  &bt BT_SEL 3  &kp F7                &kp F8             &kp F9                &kp F10             &none  &none  &none            &kp C_PAUSE  &kp UP    &kp PAGE_UP    &none    &rgb_ug RGB_ON
+&bt BT_SEL 1  &bt BT_SEL 4  &HRM_All LEFT_GUI F4  &HRM_All LCTRL F5  &HRM_All LEFT_ALT F6  &mt LCTRL DE_PLUS   &none  &none  &kp PRINTSCREEN  &kp LEFT     &kp HOME  &kp RIGHT      &kp END  &rgb_ug RGB_OFF
+&bt BT_SEL 2  &bt BT_CLR    &kp F1                &kp F2             &kp F3                &mt LCTRL DE_MINUS                &none            &none        &kp DOWN  &kp PAGE_DOWN  &none    &kp DELETE
+                                                  &trans             &trans                &kp DE_QUESTION                   &trans           &trans       &trans
             >;
         };
 
         Win-3 {
             display-name = "Win-3";
             bindings = <
-&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans
-&trans       &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &mkp MB2  &trans
+&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans    &rgb_ug RGB_EFF
+&trans       &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &mkp MB2  &rgb_ug RGB_EFR
 &trans       &trans  &trans    &trans    &trans    &trans                  &trans  &trans          &mmv MOVE_DOWN  &trans           &trans    &trans
                                &trans    &trans    &trans                  &trans  &trans          &trans
             >;
@@ -266,7 +266,7 @@
         };
 
         Windows_5_6_7 {
-            if-layers = <5 6>;
+            if-layers = <6 7>;
             then-layer = <7>;
         };
     };
