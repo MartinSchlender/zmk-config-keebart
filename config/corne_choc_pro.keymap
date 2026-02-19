@@ -57,7 +57,7 @@
         strg_W: strg_W {
             compatible = "zmk,behavior-mod-morph";
             label = "STRG_W";
-            bindings = <&kp ESCAPE>, <&kp LC(W)>;
+            bindings = <&kp BACKSPACE>, <&kp LC(W)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RCTL)>;
@@ -66,7 +66,7 @@
         gui_W: gui_W {
             compatible = "zmk,behavior-mod-morph";
             label = "GUI_W";
-            bindings = <&kp ESCAPE>, <&kp LG(W)>;
+            bindings = <&kp BACKSPACE>, <&kp LG(W)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -75,7 +75,7 @@
         strg_q: strg_q {
             compatible = "zmk,behavior-mod-morph";
             label = "STRG_Q";
-            bindings = <&kp BACKSPACE>, <&kp LC(Q)>;
+            bindings = <&kp ESCAPE>, <&kp LC(Q)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -202,10 +202,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&gui_W   &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U                 &kp I             &kp O                &kp P            &kp DE_U_UMLAUT
-&kp TAB  &kp A     &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LCTRL K  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8    &kp DE_Y  &kp X                &HRM_All LG(C) C  &paste_mac 0 V       &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &kp BACKSPACE
-                                        &mo 1             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT       &mo 2
+&kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U                 &kp I             &kp O                &kp P            &kp DE_U_UMLAUT
+&kp TAB     &kp A     &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LCTRL K  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&sl 8       &kp DE_Y  &kp X                &HRM_All LG(C) C  &paste_mac 0 V       &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &gui_W
+                                           &mo 1             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT       &mo 2
             >;
         };
 
@@ -256,9 +256,9 @@
         Win-0 {
             display-name = "Win-0";
             bindings = <
-&strg_W  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U            &kp I             &kp O                 &kp P            &kp DE_U_UMLAUT
+&strg_q  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U            &kp I             &kp O                 &kp P            &kp DE_U_UMLAUT
 &kp TAB  &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &kp G      &none  &none  &kp H     &HRM_All LALT J  &HRM_All LCTRL K  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8    &kp DE_Y  &kp X                &HRM_All LC(C) C  &paste_win 0 V       &kp B                    &kp N     &kp M            &kp COMMA         &kp DOT               &kp DE_MINUS     &strg_q
+&sl 8    &kp DE_Y  &kp X                &HRM_All LC(C) C  &paste_win 0 V       &kp B                    &kp N     &kp M            &kp COMMA         &kp DOT               &kp DE_MINUS     &strg_W
                                         &mo 5             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT  &mo 6
             >;
         };
