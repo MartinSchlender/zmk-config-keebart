@@ -60,7 +60,7 @@
             bindings = <&kp BACKSPACE>, <&kp LC(W)>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         gui_W: gui_W {
