@@ -53,6 +53,24 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        strg_W: strg_W {
+            compatible = "zmk,behavior-mod-morph";
+            label = "STRG_W";
+            bindings = <&kp ESCAPE>, <&kp LC(W)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RCTL)>;
+        };
+
+        gui_W: gui_W {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GUI_W";
+            bindings = <&kp ESCAPE>, <&kp LG(W)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -175,10 +193,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U                 &kp I             &kp O                &kp P            &kp DE_U_UMLAUT
-&kp TAB     &kp A     &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LCTRL K  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8       &kp DE_Y  &kp X                &HRM_All LG(C) C  &paste_mac 0 V       &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &kp BACKSPACE
-                                           &mo 1             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT       &mo 2
+&gui_W   &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U                 &kp I             &kp O                &kp P            &kp DE_U_UMLAUT
+&kp TAB  &kp A     &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LCTRL K  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&sl 8    &kp DE_Y  &kp X                &HRM_All LG(C) C  &paste_mac 0 V       &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &kp BACKSPACE
+                                        &mo 1             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT       &mo 2
             >;
         };
 
@@ -229,10 +247,10 @@
         Win-0 {
             display-name = "Win-0";
             bindings = <
-&kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &kp QUESTION     &kp DE_ASTERISK  &kp DE_Z  &kp U            &kp I             &kp O                 &kp P            &kp DE_U_UMLAUT
-&kp TAB     &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &kp G      &kp EXCLAMATION  &kp DE_SLASH     &kp H     &HRM_All LALT J  &HRM_All LCTRL K  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8       &kp DE_Y  &kp X                &HRM_All LC(C) C  &paste_win 0 V       &kp B                                        &kp N     &kp M            &kp COMMA         &kp DOT               &kp DE_MINUS     &kp BACKSPACE
-                                           &mo 5             &kp LEFT_SHIFT       &kp SPACE                                    &kp RET   &kp RIGHT_SHIFT  &mo 6
+&strg_W  &kp Q     &kp W                &kp E             &kp R                &kp T      &kp QUESTION     &kp DE_ASTERISK  &kp DE_Z  &kp U            &kp I             &kp O                 &kp P            &kp DE_U_UMLAUT
+&kp TAB  &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &kp G      &kp EXCLAMATION  &kp DE_SLASH     &kp H     &HRM_All LALT J  &HRM_All LCTRL K  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&sl 8    &kp DE_Y  &kp X                &HRM_All LC(C) C  &paste_win 0 V       &kp B                                        &kp N     &kp M            &kp COMMA         &kp DOT               &kp DE_MINUS     &kp BACKSPACE
+                                        &mo 5             &kp LEFT_SHIFT       &kp SPACE                                    &kp RET   &kp RIGHT_SHIFT  &mo 6
             >;
         };
 
