@@ -34,18 +34,24 @@
             continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SLASH QUESTION>;
         };
 
-        tapdance_mac_V: tapdance_mac_V {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_MAC_V";
-            #binding-cells = <0>;
-            bindings = <&kp V>, <&kp LG(V)>;
+        paste_win: paste_win {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PASTE_WIN";
+            bindings = <&macro_paste_win>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
 
-        tapdance_win_v: tapdance_win_v {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_WIN_V";
-            #binding-cells = <0>;
-            bindings = <&kp V>, <&kp LC(V)>;
+        paste_mac: paste_mac {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PASTE_MAC";
+            bindings = <&paste_mac>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -119,6 +125,20 @@
             bindings = <&none &kp LS(G) &kp LS(R) &kp LS(O) &kp LS(U) &kp LS(P) &kp SPACE &kp LS(B) &kp LS(DE_Y)>;
             label = "MACRO_GROUP_BY";
         };
+
+        macro_paste_win: macro_paste_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V)>;
+            label = "MACRO_PASTE_WIN";
+        };
+
+        macro_paste_mac: macro_paste_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V)>;
+            label = "MACRO_PASTE_MAC";
+        };
     };
 
     combos {
@@ -157,7 +177,7 @@
             bindings = <
 &kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U                 &kp I             &kp O                &kp P            &kp DE_U_UMLAUT
 &kp TAB     &kp A     &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LCTRL K  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8       &kp DE_Y  &kp X                &HRM_All LG(C) C  &tapdance_mac_V      &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &kp BACKSPACE
+&sl 8       &kp DE_Y  &kp X                &HRM_All LG(C) C  &none                &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &kp BACKSPACE
                                            &mo 1             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT       &mo 2
             >;
         };
@@ -211,7 +231,7 @@
             bindings = <
 &kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &kp QUESTION     &kp DE_ASTERISK  &kp DE_Z  &kp U            &kp I             &kp O                 &kp P            &kp DE_U_UMLAUT
 &kp TAB     &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &kp G      &kp EXCLAMATION  &kp DE_SLASH     &kp H     &HRM_All LALT J  &HRM_All LCTRL K  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8       &kp DE_Y  &kp X                &HRM_All LC(C) C  &tapdance_win_v      &kp B                                        &kp N     &kp M            &kp COMMA         &kp DOT               &kp DE_MINUS     &kp BACKSPACE
+&sl 8       &kp DE_Y  &kp X                &HRM_All LC(C) C  &none                &kp B                                        &kp N     &kp M            &kp COMMA         &kp DOT               &kp DE_MINUS     &kp BACKSPACE
                                            &mo 5             &kp LEFT_SHIFT       &kp SPACE                                    &kp RET   &kp RIGHT_SHIFT  &mo 6
             >;
         };
