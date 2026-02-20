@@ -193,7 +193,7 @@
         compatible = "zmk,keymap";
 
         Mac {
-            display-name = "Mac QWERTZ";
+            display-name = "Mac ABC";
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  | BSPC |
@@ -210,7 +210,7 @@
         };
 
         Mac-1 {
-            display-name = "Mac Symbole";
+            display-name = "Mac 123";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -227,7 +227,7 @@
         };
 
         Mac-2 {
-            display-name = "Mac Cursor & F1-F10";
+            display-name = "Mac Fnn";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -254,7 +254,7 @@
         };
 
         Win-0 {
-            display-name = "Win QWERTZ";
+            display-name = "Win ABC";
             bindings = <
 &strg_q  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U            &kp I             &kp O                 &kp P            &kp DE_U_UMLAUT
 &kp TAB  &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &kp G      &none  &none  &kp H     &HRM_All LALT J  &HRM_All LCTRL K  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
@@ -264,7 +264,7 @@
         };
 
         Win-1 {
-            display-name = "Win Symbole";
+            display-name = "Win 123";
             bindings = <
 &kp DE_BACKSLASH  &kp DE_AT            &kp DE_DOUBLE_QUOTES                &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                  &kp N8                   &kp N9                 &kp DE_CARET  &kp DE_CAPITAL_SHARP_S
 &kp DE_PIPE       &kp DE_LEFT_BRACKET  &HRM_All LEFT_GUI DE_RIGHT_BRACKET  &HRM_All LCTRL DE_HASH   &HRM_All LEFT_ALT INS     &kp DE_EURO     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All LALT NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RIGHT_GUI N6  &kp DE_PLUS   &kp DE_SLASH
@@ -274,7 +274,7 @@
         };
 
         Win-2 {
-            display-name = "Win Cursor & F1-F10";
+            display-name = "Win Fnn";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 3  &kp F7                &kp F8             &kp F9                &kp F10             &none  &none  &none            &kp C_PAUSE  &kp UP    &kp PAGE_UP    &none    &none
 &bt BT_SEL 1  &bt BT_SEL 4  &HRM_All LEFT_GUI F4  &HRM_All LCTRL F5  &HRM_All LEFT_ALT F6  &mt LCTRL DE_PLUS   &none  &none  &kp PRINTSCREEN  &kp LEFT     &kp HOME  &kp RIGHT      &kp END  &none
@@ -294,7 +294,7 @@
         };
 
         Sticky {
-            display-name = "Macros & RGB";
+            display-name = "Macros";
             bindings = <
 &trans     &trans  &Macro_WHERE   &trans  &trans  &trans           &trans  &trans  &trans  &trans  &Macro_INNER_JOIN  &macro_order_by   &rgb_ug RGB_SPI  &rgb_ug RGB_EFF
 &trans     &trans  &Macro_SELECT  &trans  &trans  &macro_group_by  &trans  &trans  &trans  &trans  &trans             &Macro_Left_Join  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR
