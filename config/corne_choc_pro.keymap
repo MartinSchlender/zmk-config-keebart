@@ -187,6 +187,18 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <41 44>;
         };
+
+        combo_to_Layer_9 {
+            bindings = <&to 9>;
+            key-positions = <0 13>;
+            layers = <0 4>;
+        };
+
+        combo_back_from_9 {
+            bindings = <&to 0>;
+            key-positions = <0 13>;
+            layers = <9>;
+        };
     };
 
     keymap {
@@ -296,20 +308,22 @@
         Sticky {
             display-name = "Macros";
             bindings = <
-&trans     &trans  &Macro_WHERE   &trans  &trans  &trans           &trans  &trans  &trans  &trans  &Macro_INNER_JOIN  &macro_order_by   &rgb_ug RGB_SPI  &rgb_ug RGB_EFF
-&trans     &trans  &Macro_SELECT  &trans  &trans  &macro_group_by  &trans  &trans  &trans  &trans  &trans             &Macro_Left_Join  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR
-&CapsWord  &trans  &trans         &trans  &trans  &Macro_BH4SF                     &trans  &trans  &trans             &trans            &trans           &trans
-                                  &trans  &trans  &trans                           &trans  &trans  &trans
+&bootloader  &trans  &Macro_WHERE   &trans  &trans  &trans           &trans  &trans  &trans  &trans  &Macro_INNER_JOIN  &macro_order_by   &rgb_ug RGB_SPI  &rgb_ug RGB_EFF
+&trans       &trans  &Macro_SELECT  &trans  &trans  &macro_group_by  &trans  &trans  &trans  &trans  &trans             &Macro_Left_Join  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR
+&CapsWord    &trans  &trans         &trans  &trans  &Macro_BH4SF                     &trans  &trans  &trans             &trans            &trans           &trans
+                                    &trans  &trans  &trans                           &trans  &trans  &trans
             >;
         };
 
-        layer_9 {
-           bindings = <
-&kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U                 &kp I             &kp O                &kp P            &kp DE_U_UMLAUT
-&kp TAB     &kp A     &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LCTRL K  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8       &kp DE_Y  &kp X                &HRM_All LG(C) C  &paste_mac 0 V       &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &gui_W
-                                           &mo 1             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT       &mo 2
+        Mac-Bone {
+            bindings = <
+&kp ESCAPE  &kp J  &kp D                &kp U                       &kp A                     &kp X            &none  &none  &kp P    &kp H                 &kp L             &kp M                &kp W  &kp MINUS
+&kp TAB     &kp C  &HRM_All LEFT_ALT T  &HRM_All LCTRL I            &HRM_All LEFT_GUI E       &kp O            &none  &none  &kp B    &HRM_All RIGHT_GUI N  &HRM_All LCTRL R  &HRM_All LEFT_ALT S  &kp G  &kp Q
+&sl 8       &kp F  &kp V                &HRM_All LG(C) DE_U_UMLAUT  &paste_mac 0 DE_A_UMLAUT  &kp DE_O_UMLAUT                &kp N    &kp M                 &kp COMMA         &kp DOT              &kp K  &gui_W
+                                        &mo 1                       &kp LEFT_SHIFT            &kp SPACE                      &kp RET  &kp RIGHT_SHIFT       &mo 2
             >;
+
+            label = "Bone";
         };
     };
 
