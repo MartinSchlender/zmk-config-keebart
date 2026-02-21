@@ -317,10 +317,10 @@
 
         Mac-Bone {
             bindings = <
-&kp ESCAPE  &kp J  &kp D                &kp U                       &kp A                     &kp X            &none  &none  &kp P    &kp H                 &kp L             &kp M                &kp W  &kp MINUS
-&kp TAB     &kp C  &HRM_All LEFT_ALT T  &HRM_All LCTRL I            &HRM_All LEFT_GUI E       &kp O            &none  &none  &kp B    &HRM_All RIGHT_GUI N  &HRM_All LCTRL R  &HRM_All LEFT_ALT S  &kp G  &kp Q
-&sl 8       &kp F  &kp V                &HRM_All LG(C) DE_U_UMLAUT  &paste_mac 0 DE_A_UMLAUT  &kp DE_O_UMLAUT                &kp N    &kp M                 &kp COMMA         &kp DOT              &kp K  &gui_W
-                                        &mo 1                       &kp LEFT_SHIFT            &kp SPACE                      &kp RET  &kp RIGHT_SHIFT       &mo 2
+&kp ESCAPE  &kp J  &kp D                &kp U                       &kp A                     &kp X            &none  &none  &kp P     &kp H                 &kp L             &kp M                &kp W  &kp MINUS
+&kp TAB     &kp C  &HRM_All LEFT_ALT T  &HRM_All LCTRL I            &HRM_All LEFT_GUI E       &kp O            &none  &none  &kp B     &HRM_All RIGHT_GUI N  &HRM_All LCTRL R  &HRM_All LEFT_ALT S  &kp G  &kp Q
+&sl 8       &kp F  &kp V                &HRM_All LG(C) DE_U_UMLAUT  &paste_mac 0 DE_A_UMLAUT  &kp DE_O_UMLAUT                &kp DE_Y  &kp DE_Z              &kp COMMA         &kp DOT              &kp K  &gui_W
+                                        &mo 1                       &kp LEFT_SHIFT            &kp SPACE                      &kp RET   &kp RIGHT_SHIFT       &mo 2
             >;
 
             label = "Bone";
