@@ -315,15 +315,35 @@
             >;
         };
 
-        Mac-Bone {
+        Bone-0 {
             bindings = <
 &kp ESCAPE  &kp J  &kp D                &kp U                       &kp A                     &kp X            &none  &none  &kp P     &kp H                 &kp L             &kp M                &kp W  &kp MINUS
 &kp TAB     &kp C  &HRM_All LEFT_ALT T  &HRM_All LCTRL I            &HRM_All LEFT_GUI E       &kp O            &none  &none  &kp B     &HRM_All RIGHT_GUI N  &HRM_All LCTRL R  &HRM_All LEFT_ALT S  &kp G  &kp Q
 &sl 8       &kp F  &kp V                &HRM_All LG(C) DE_U_UMLAUT  &paste_mac 0 DE_A_UMLAUT  &kp DE_O_UMLAUT                &kp DE_Y  &kp DE_Z              &kp COMMA         &kp DOT              &kp K  &gui_W
-                                        &mo 1                       &kp LEFT_SHIFT            &kp SPACE                      &kp RET   &kp RIGHT_SHIFT       &mo 2
+                                        &mo 10                      &kp LEFT_SHIFT            &kp SPACE                      &kp RET   &kp RIGHT_SHIFT       &mo 11
             >;
 
             label = "Bone";
+        };
+
+        Bone-1 {
+            display-name = "Bone 123";
+            bindings = <
+&kp LS(LA(NUMBER_7))  &kp LA(L)         &kp DE_DOUBLE_QUOTES        &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                       &kp N8                   &kp N9            &kp N0       &kp MINUS
+&kp LA(NUMBER_7)      &kp LA(NUMBER_5)  &HRM_All LALT LA(NUMBER_6)  &HRM_All LCTRL DE_HASH   &kp LEFT_GUI              &kp DE_EURO     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All RIGHT_GUI NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RALT N6  &kp DE_PLUS  &kp DE_SLASH
+&kp LA(N)             &kp LA(NUMBER_8)  &kp LA(NUMBER_9)            &kp NON_US_BSLH          &kp LS(NON_US_BSLH)       &kp DE_PERCENT                &kp DE_AMPERSAND     &kp N1                       &kp N2                   &kp N3            &kp N0       &kp DE_ASTERISK
+                                                                    &trans                   &trans                    &trans                        &kp DE_EQUAL         &trans                       &trans
+            >;
+        };
+
+        Bone-2 {
+            display-name = "Bonu Fnn";
+            bindings = <
+&bt BT_SEL 0  &bt BT_SEL 3  &kp F7                &kp F8             &kp F9            &kp F10                &none  &none  &kp C_PAUSE           &kp EXCL  &kp UP              &kp PAGE_UP    &none          &rgb_ug RGB_ON
+&bt BT_SEL 1  &bt BT_SEL 4  &HRM_All LEFT_ALT F4  &HRM_All LCTRL F5  &HRM_All LGUI F6  &kp LG(RIGHT_BRACKET)  &none  &none  &kp LG(LS(NUMBER_4))  &kp LEFT  &kp LG(LEFT_ARROW)  &kp RIGHT      &kp LG(RIGHT)  &rgb_ug RGB_OFF
+&bt BT_SEL 2  &bt BT_CLR    &kp F1                &kp F2             &kp F3            &kp LG(SLASH)                        &none                 &none     &kp DOWN            &kp PAGE_DOWN  &none          &kp DELETE
+                                                  &trans             &trans            &kp DE_QUESTION                      &trans                &trans    &trans
+            >;
         };
     };
 
