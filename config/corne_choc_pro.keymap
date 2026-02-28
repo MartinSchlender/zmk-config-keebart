@@ -248,9 +248,9 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 3  &kp F7                &kp F8             &kp F9            &kp F10                &none  &none  &kp C_PAUSE           &kp EXCL  &kp UP              &kp PAGE_UP    &none          &rgb_ug RGB_ON
-&bt BT_SEL 1  &bt BT_SEL 4  &HRM_All LEFT_ALT F4  &HRM_All LCTRL F5  &HRM_All LGUI F6  &kp LG(RIGHT_BRACKET)  &none  &none  &kp LG(LS(NUMBER_4))  &kp LEFT  &kp LG(LEFT_ARROW)  &kp RIGHT      &kp LG(RIGHT)  &rgb_ug RGB_OFF
-&bt BT_SEL 2  &bt BT_CLR    &kp F1                &kp F2             &kp F3            &kp LG(SLASH)                        &none                 &none     &kp DOWN            &kp PAGE_DOWN  &none          &kp DELETE
+&bt BT_SEL 0  &bt BT_SEL 3  &kp F7                &kp F8             &kp F9            &kp F10                &none  &none  &kp C_PAUSE           &kp EXCL  &kp UP              &kp LG(UP)    &none          &rgb_ug RGB_ON
+&bt BT_SEL 1  &bt BT_SEL 4  &HRM_All LEFT_ALT F4  &HRM_All LCTRL F5  &HRM_All LGUI F6  &kp LG(RIGHT_BRACKET)  &none  &none  &kp LG(LS(NUMBER_4))  &kp LEFT  &kp LG(LEFT_ARROW)  &kp RIGHT     &kp LG(RIGHT)  &rgb_ug RGB_OFF
+&bt BT_SEL 2  &bt BT_CLR    &kp F1                &kp F2             &kp F3            &kp LG(SLASH)                        &none                 &none     &kp DOWN            &kp LG(DOWN)  &none          &kp DELETE
                                                   &trans             &trans            &kp DE_QUESTION                      &trans                &trans    &trans
             >;
         };
@@ -258,9 +258,9 @@
         Mac-3 {
             display-name = "Mac-3";
             bindings = <
-&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans
+&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &kp PAGE_UP      &trans    &trans
 &trans       &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &mkp MB2  &trans
-&trans       &trans  &trans    &trans    &trans    &trans                  &trans  &trans          &mmv MOVE_DOWN  &trans           &trans    &trans
+&trans       &trans  &trans    &trans    &trans    &trans                  &trans  &trans          &mmv MOVE_DOWN  &kp PAGE_DOWN    &trans    &trans
                                &trans    &trans    &trans                  &trans  &trans          &trans
             >;
         };
@@ -288,9 +288,9 @@
         Win-2 {
             display-name = "Win Fnn";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 3  &kp F7                &kp F8             &kp F9                &kp F10             &none  &none  &kp PAUSE_BREAK  &kp DE_EXCL  &kp UP    &kp PAGE_UP    &none    &none
-&bt BT_SEL 1  &bt BT_SEL 4  &HRM_All LEFT_GUI F4  &HRM_All LCTRL F5  &HRM_All LEFT_ALT F6  &mt LCTRL DE_PLUS   &none  &none  &kp PRINTSCREEN  &kp LEFT     &kp HOME  &kp RIGHT      &kp END  &none
-&bt BT_SEL 2  &bt BT_CLR    &kp F1                &kp F2             &kp F3                &mt LCTRL DE_MINUS                &none            &none        &kp DOWN  &kp PAGE_DOWN  &none    &kp DELETE
+&bt BT_SEL 0  &bt BT_SEL 3  &kp F7                &kp F8             &kp F9                &kp F10             &none  &none  &kp PAUSE_BREAK  &kp DE_EXCL  &kp UP    &kp LC(HOME)  &none    &none
+&bt BT_SEL 1  &bt BT_SEL 4  &HRM_All LEFT_GUI F4  &HRM_All LCTRL F5  &HRM_All LEFT_ALT F6  &mt LCTRL DE_PLUS   &none  &none  &kp PRINTSCREEN  &kp LEFT     &kp HOME  &kp RIGHT     &kp END  &none
+&bt BT_SEL 2  &bt BT_CLR    &kp F1                &kp F2             &kp F3                &mt LCTRL DE_MINUS                &none            &none        &kp DOWN  &kp LC(END)   &none    &kp DELETE
                                                   &trans             &trans                &kp DE_QUESTION                   &trans           &trans       &trans
             >;
         };
@@ -298,9 +298,9 @@
         Win-3 {
             display-name = "Win-3";
             bindings = <
-&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans    &rgb_ug RGB_EFF
+&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &kp PAGE_UP      &trans    &rgb_ug RGB_EFF
 &trans       &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &mkp MB2  &rgb_ug RGB_EFR
-&trans       &trans  &trans    &trans    &trans    &trans                  &trans  &trans          &mmv MOVE_DOWN  &trans           &trans    &trans
+&trans       &trans  &trans    &trans    &trans    &trans                  &trans  &trans          &mmv MOVE_DOWN  &kp PAGE_DOWN    &trans    &trans
                                &trans    &trans    &trans                  &trans  &trans          &trans
             >;
         };
