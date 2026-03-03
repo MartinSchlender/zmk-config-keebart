@@ -369,5 +369,10 @@
             if-layers = <6 5>;
             then-layer = <7>;
         };
+
+        Bone_10_11_12 {
+            if-layers = <10 11>;
+            then-layer = <12>;
+        };
     };
 };
