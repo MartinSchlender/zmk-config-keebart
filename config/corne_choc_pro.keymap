@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include "keys_de.h"
 
-&mmv { acceleration-exponent = <3>; };
+&mmv { acceleration-exponent = <1>; };
 
 / {
     chosen { zmk,physical-layout = &default_layout; };
