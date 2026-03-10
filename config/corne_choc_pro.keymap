@@ -181,9 +181,53 @@
                 <&macro_press>,
                 <&kp RIGHT_ALT>,
                 <&macro_tap>,
-                <&kp MINUS>;
+                <&kp MINUS>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
 
             label = "DE_BACKSLASH";
+        };
+
+        macro_DE_AT: macro_DE_AT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp Q>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "MACRO_DE_AT";
+        };
+
+        macro_DE_DoubleQuotes: macro_DE_DoubleQuotes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp N2>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            label = "MACRO_DE_DOUBLEQUOTES";
+        };
+
+        macro_DE_PIPE: macro_DE_PIPE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp PIPE>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "MACRO_DE_PIPE";
         };
     };
 
@@ -297,8 +341,8 @@
         Win-1 {
             display-name = "Win 123";
             bindings = <
-&macro_DE_Backslash  &kp DE_AT            &kp DE_DOUBLE_QUOTES                &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                  &kp N8                   &kp N9                 &kp DE_CARET  &kp DE_SHARP_S
-&kp DE_PIPE          &kp DE_LEFT_BRACKET  &HRM_All LEFT_GUI DE_RIGHT_BRACKET  &HRM_All LCTRL DE_HASH   &HRM_All LEFT_ALT INS     &kp DE_EURO     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All LALT NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RIGHT_GUI N6  &kp DE_PLUS   &kp DE_SLASH
+&macro_DE_Backslash  &macro_DE_AT         &kp DE_DOUBLE_QUOTES                &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                  &kp N8                   &kp N9                 &kp DE_CARET  &kp DE_SHARP_S
+&macro_DE_PIPE       &kp DE_LEFT_BRACKET  &HRM_All LEFT_GUI DE_RIGHT_BRACKET  &HRM_All LCTRL DE_HASH   &HRM_All LEFT_ALT INS     &kp DE_EURO     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All LALT NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RIGHT_GUI N6  &kp DE_PLUS   &kp DE_SLASH
 &kp DE_TILDE         &kp DE_LBRC          &kp DE_RIGHT_BRACE                  &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_PERCENT                &kp DE_AMPERSAND     &kp N1                  &kp N2                   &kp N3                 &kp N0        &kp DE_ASTERISK
                                                                               &trans                   &trans                    &trans                        &kp DE_EQUAL         &trans                  &trans
             >;
