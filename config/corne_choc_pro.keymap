@@ -173,6 +173,18 @@
             bindings = <&kp LG(V)>;
             label = "MACRO_PASTE_MAC";
         };
+
+        macro_DE_Backslash: DE_Backslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp MINUS>;
+
+            label = "DE_BACKSLASH";
+        };
     };
 
     combos {
@@ -285,10 +297,10 @@
         Win-1 {
             display-name = "Win 123";
             bindings = <
-&kp DE_BACKSLASH  &kp DE_AT            &kp DE_DOUBLE_QUOTES                &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                  &kp N8                   &kp N9                 &kp DE_CARET  &kp DE_SHARP_S
-&kp DE_PIPE       &kp DE_LEFT_BRACKET  &HRM_All LEFT_GUI DE_RIGHT_BRACKET  &HRM_All LCTRL DE_HASH   &HRM_All LEFT_ALT INS     &kp DE_EURO     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All LALT NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RIGHT_GUI N6  &kp DE_PLUS   &kp DE_SLASH
-&kp DE_TILDE      &kp DE_LBRC          &kp DE_RIGHT_BRACE                  &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_PERCENT                &kp DE_AMPERSAND     &kp N1                  &kp N2                   &kp N3                 &kp N0        &kp DE_ASTERISK
-                                                                           &trans                   &trans                    &trans                        &kp DE_EQUAL         &trans                  &trans
+&macro_DE_Backslash  &kp DE_AT            &kp DE_DOUBLE_QUOTES                &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                  &kp N8                   &kp N9                 &kp DE_CARET  &kp DE_SHARP_S
+&kp DE_PIPE          &kp DE_LEFT_BRACKET  &HRM_All LEFT_GUI DE_RIGHT_BRACKET  &HRM_All LCTRL DE_HASH   &HRM_All LEFT_ALT INS     &kp DE_EURO     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All LALT NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RIGHT_GUI N6  &kp DE_PLUS   &kp DE_SLASH
+&kp DE_TILDE         &kp DE_LBRC          &kp DE_RIGHT_BRACE                  &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_PERCENT                &kp DE_AMPERSAND     &kp N1                  &kp N2                   &kp N3                 &kp N0        &kp DE_ASTERISK
+                                                                              &trans                   &trans                    &trans                        &kp DE_EQUAL         &trans                  &trans
             >;
         };
 
