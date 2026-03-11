@@ -91,7 +91,7 @@
         HRM_Macro_Tap_Right_Bracket: HRM_Macro_Tap_Right_Bracket {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_MACRO_TAP_RIGHT_BRACKET";
-            bindings = <&kp>, <&macro_DE_LeftCornerBracket>;
+            bindings = <&kp>, <&macro_DE_RightCornerBracket>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
@@ -233,7 +233,7 @@
                 <&macro_press>,
                 <&kp RIGHT_ALT>,
                 <&macro_tap>,
-                <&kp BACKSLASH>,
+                <&kp NON_US_BSLH>,
                 <&macro_release>,
                 <&kp RIGHT_ALT>;
 
