@@ -97,16 +97,6 @@
             tapping-term-ms = <280>;
             flavor = "tap-preferred";
         };
-
-        HRM_macro_INSERT: HRM_macro_INSERT {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRM_MACRO_INSERT";
-            bindings = <&kp>, <&macro_INSERT>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "tap-preferred";
-        };
     };
 
     macros {
@@ -333,14 +323,6 @@
 
             label = "MACRO_EURO";
         };
-
-        macro_INSERT: macro_INSERT {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap_time 30>, <&kp INS>;
-
-            label = "MACRO_INSERT";
-        };
     };
 
     combos {
@@ -459,7 +441,6 @@
                                                                                            &trans                   &trans                    &trans                        &kp DE_EQUAL         &trans                  &trans
             >;
         };
-
 
         Win-2 {
             display-name = "Win Fnn";
