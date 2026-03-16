@@ -546,7 +546,7 @@
         };
 
         Bone-Win-2 {
-            display-name = "BWin-3";
+            display-name = "BWin-2";
             bindings = <
 &none  &kp LA(F11)  &kp F7                &kp F8             &kp F9                &kp F10             &none  &none  &kp PAUSE_BREAK  &kp DE_EXCL  &kp UP    &kp LC(HOME)  &none    &rgb_ug RGB_ON
 &none  &kp LS(F8)   &HRM_All LEFT_GUI F4  &HRM_All LCTRL F5  &HRM_All LEFT_ALT F6  &mt LCTRL DE_PLUS   &none  &none  &kp PRINTSCREEN  &kp LEFT     &kp HOME  &kp RIGHT     &kp END  &rgb_ug RGB_OFF
