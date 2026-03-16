@@ -348,13 +348,25 @@
         combo_to_Layer_9 {
             bindings = <&to 9>;
             key-positions = <0 13>;
-            layers = <0 4>;
+            layers = <0>;
         };
 
         combo_back_from_9 {
             bindings = <&to 0>;
             key-positions = <0 13>;
             layers = <9>;
+        };
+
+        combo_to_Layer_13 {
+            bindings = <&to 13>;
+            key-positions = <0 13>;
+            layers = <4>;
+        };
+
+        combo_back_from_13 {
+            bindings = <&to 4>;
+            key-positions = <0 13>;
+            layers = <13>;
         };
     };
 
@@ -472,7 +484,7 @@
             >;
         };
 
-        Bone-0 {
+        Bone-Mac-0 {
             bindings = <
 &kp ESCAPE  &kp J  &kp D                &kp U                       &kp A                     &kp X            &none  &none  &kp P     &kp H                 &kp L             &kp M                &kp W  &kp DE_MINUS
 &kp TAB     &kp C  &HRM_All LEFT_ALT T  &HRM_All LCTRL I            &HRM_All LEFT_GUI E       &kp O            &none  &none  &kp B     &HRM_All RIGHT_GUI N  &HRM_All LCTRL R  &HRM_All LEFT_ALT S  &kp G  &kp Q
@@ -480,11 +492,11 @@
                                         &mo 10                      &kp LEFT_SHIFT            &kp SPACE                      &kp RET   &kp RIGHT_SHIFT       &mo 11
             >;
 
-            label = "Bone";
+            label = "BMacABC";
         };
 
-        Bone-1 {
-            display-name = "Bone 123";
+        Bone-Mac-1 {
+            display-name = "BMac123";
             bindings = <
 &kp LS(LA(NUMBER_7))  &kp LA(L)         &kp DE_DOUBLE_QUOTES        &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                       &kp N8                   &kp N9            &kp N0       &kp DE_SHARP_S
 &kp LA(NUMBER_7)      &kp LA(NUMBER_5)  &HRM_All LALT LA(NUMBER_6)  &HRM_All LCTRL DE_HASH   &kp LEFT_GUI              &kp DE_EURO     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All RIGHT_GUI NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RALT N6  &kp DE_PLUS  &kp DE_SLASH
@@ -493,8 +505,8 @@
             >;
         };
 
-        Bone-2 {
-            display-name = "Bonu Fnn";
+        Bone-Mac-2 {
+            display-name = "BMacFnn";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 3  &kp F7                &kp F8             &kp F9            &kp F10                &none  &none  &kp C_PAUSE           &kp EXCL  &kp UP              &kp LG(UP)    &none          &rgb_ug RGB_ON
 &bt BT_SEL 1  &bt BT_SEL 4  &HRM_All LEFT_ALT F4  &HRM_All LCTRL F5  &HRM_All LGUI F6  &kp LG(RIGHT_BRACKET)  &none  &none  &kp LG(LS(NUMBER_4))  &kp LEFT  &kp LG(LEFT_ARROW)  &kp RIGHT     &kp LG(RIGHT)  &rgb_ug RGB_OFF
@@ -503,11 +515,51 @@
             >;
         };
 
-        Bone-3 {
-            display-name = "Bone-3";
+        Bone-Mac-3 {
+            display-name = "BMac-3";
             bindings = <
 &bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &kp PAGE_UP      &trans    &trans
 &trans       &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &mkp MB2  &trans
+&trans       &trans  &trans    &trans    &trans    &trans                  &trans  &trans          &mmv MOVE_DOWN  &kp PAGE_DOWN    &trans    &trans
+                               &trans    &trans    &trans                  &trans  &trans          &trans
+            >;
+        };
+
+        Bone-Win-0 {
+            label = "BWinABC";
+            bindings = <
+&kp ESCAPE  &kp J  &kp D                &kp U                       &kp A                     &kp X            &none  &none  &kp P     &kp H                &kp L             &kp M                 &kp W  &kp DE_MINUS
+&kp TAB     &kp C  &HRM_All LEFT_GUI T  &HRM_All LCTRL I            &HRM_All LEFT_ALT E       &kp O            &none  &none  &kp B     &HRM_All LEFT_ALT N  &HRM_All LCTRL R  &HRM_All RIGHT_GUI S  &kp G  &kp Q
+&sl 8       &kp F  &kp V                &HRM_All LG(C) DE_U_UMLAUT  &paste_mac 0 DE_A_UMLAUT  &kp DE_O_UMLAUT                &kp DE_Y  &kp DE_Z             &kp COMMA         &kp DOT               &kp K  &gui_W
+                                        &mo 14                      &kp LEFT_SHIFT            &kp SPACE                      &kp RET   &kp RIGHT_SHIFT      &mo 15
+            >;
+        };
+
+        Bone-Win-1 {
+            display-name = "BWin123";
+            bindings = <
+&macro_DE_Backslash  &macro_DE_AT                 &kp DE_DOUBLE_QUOTES                     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                  &kp N8                   &kp N9                 &kp DE_CARET  &kp DE_SHARP_S
+&macro_DE_PIPE       &macro_DE_LeftCornerBracket  &HRM_Macro_Tap_Right_Bracket LEFT_GUI 0  &HRM_All LCTRL DE_HASH   &HRM_All LEFT_ALT INS     &macro_Euro     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All LALT NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RIGHT_GUI N6  &kp DE_PLUS   &kp DE_SLASH
+&macro_Tilde         &macro_Left_Round_Bracket    &macro_Right_Round_Bracket               &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_PERCENT                &kp DE_AMPERSAND     &kp N1                  &kp N2                   &kp N3                 &kp N0        &kp DE_ASTERISK
+                                                                                           &trans                   &trans                    &trans                        &kp DE_EQUAL         &trans                  &trans
+            >;
+        };
+
+        Bone-Win-2 {
+            display-name = "BWinFnn";
+            bindings = <
+&none  &kp LA(F11)  &kp F7                &kp F8             &kp F9                &kp F10             &none  &none  &kp PAUSE_BREAK  &kp DE_EXCL  &kp UP    &kp LC(HOME)  &none    &rgb_ug RGB_ON
+&none  &kp LS(F8)   &HRM_All LEFT_GUI F4  &HRM_All LCTRL F5  &HRM_All LEFT_ALT F6  &mt LCTRL DE_PLUS   &none  &none  &kp PRINTSCREEN  &kp LEFT     &kp HOME  &kp RIGHT     &kp END  &rgb_ug RGB_OFF
+&none  &none        &kp F1                &kp F2             &kp F3                &mt LCTRL DE_MINUS                &none            &none        &kp DOWN  &kp LC(END)   &none    &kp DELETE
+                                          &trans             &trans                &kp DE_QUESTION                   &trans           &trans       &trans
+            >;
+        };
+
+        Bone-Win-3 {
+            display-name = "BWin-3";
+            bindings = <
+&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &kp PAGE_UP      &trans    &rgb_ug RGB_EFF
+&trans       &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &mkp MB2  &rgb_ug RGB_EFR
 &trans       &trans  &trans    &trans    &trans    &trans                  &trans  &trans          &mmv MOVE_DOWN  &kp PAGE_DOWN    &trans    &trans
                                &trans    &trans    &trans                  &trans  &trans          &trans
             >;
@@ -530,6 +582,11 @@
         Bone_10_11_12 {
             if-layers = <10 11>;
             then-layer = <12>;
+        };
+
+        Bone_14_15_16 {
+            if-layers = <14 15>;
+            then-layer = <16>;
         };
     };
 };
