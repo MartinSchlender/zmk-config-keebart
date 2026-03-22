@@ -30,8 +30,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <125>;
         };
 
         CapsWord: CapsWord {
@@ -47,8 +48,9 @@
             bindings = <&macro_paste_win>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <175>;
             flavor = "tap-preferred";
+            require-prior-idle-ms = <125>;
         };
 
         paste_mac: paste_mac {
@@ -57,8 +59,9 @@
             bindings = <&macro_paste_mac>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <175>;
             flavor = "tap-preferred";
+            require-prior-idle-ms = <125>;
         };
 
         strg_W: strg_W {
@@ -94,8 +97,9 @@
             bindings = <&kp>, <&macro_DE_RightCornerBracket>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <125>;
         };
     };
 
