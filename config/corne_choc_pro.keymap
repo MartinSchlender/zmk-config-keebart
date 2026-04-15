@@ -434,9 +434,9 @@
         Mac-3 {
             display-name = "Mac-3";
             bindings = <
-&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &kp PAGE_UP      &trans    &trans
+&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &kp PAGE_UP      &trans    &trans
 &trans       &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &mkp MB2  &trans
-&trans       &trans  &trans    &trans    &trans    &trans                  &trans  &trans          &mmv MOVE_DOWN  &kp PAGE_DOWN    &trans    &trans
+&trans       &trans  &trans    &trans    &trans    &trans                  &trans  &msc SCRL_DOWN  &mmv MOVE_DOWN  &kp PAGE_DOWN    &trans    &trans
                                &trans    &trans    &trans                  &trans  &trans          &trans
             >;
         };
@@ -474,9 +474,9 @@
         Win-3 {
             display-name = "Win-3";
             bindings = <
-&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &kp PAGE_UP      &trans    &rgb_ug RGB_EFF
+&bootloader  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &kp PAGE_UP      &trans    &rgb_ug RGB_EFF
 &trans       &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &mkp MB2  &rgb_ug RGB_EFR
-&trans       &trans  &trans    &trans    &trans    &trans                  &trans  &trans          &mmv MOVE_DOWN  &kp PAGE_DOWN    &trans    &trans
+&trans       &trans  &trans    &trans    &trans    &trans                  &trans  &msc SCRL_DOWN  &mmv MOVE_DOWN  &kp PAGE_DOWN    &trans    &trans
                                &trans    &trans    &trans                  &trans  &trans          &trans
             >;
         };
