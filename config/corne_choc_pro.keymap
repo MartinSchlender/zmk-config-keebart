@@ -104,6 +104,24 @@
             flavor = "balanced";
             require-prior-idle-ms = <125>;
         };
+
+        CMD_Q: CMD_Q {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_Q";
+            bindings = <&sl 8>, <&kp LG(Q)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        Alt_F4: Alt_F4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_F4";
+            bindings = <&sl 8>, <&kp LA(F4)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -392,7 +410,7 @@
             bindings = <
 &kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U                 &kp I             &kp O                &kp P            &kp DE_U_UMLAUT
 &kp TAB     &kp A     &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LCTRL K  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8       &kp DE_Y  &kp X                &HRM_All LG(C) C  &paste_mac 0 V       &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &gui_W
+&CMD_Q      &kp DE_Y  &kp X                &HRM_All LG(C) C  &paste_mac 0 V       &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &gui_W
                                            &mo 1             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT       &mo 2
             >;
         };
@@ -446,7 +464,7 @@
             bindings = <
 &strg_q  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U            &kp I             &kp O                 &kp P            &kp DE_U_UMLAUT
 &kp TAB  &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &kp G      &none  &none  &kp H     &HRM_All LALT J  &HRM_All LCTRL K  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&sl 8    &kp DE_Y  &kp X                &HRM_All LC(C) C  &paste_win 0 V       &kp B                    &kp N     &kp M            &kp COMMA         &kp DOT               &kp DE_MINUS     &strg_W
+&Alt_F4  &kp DE_Y  &kp X                &HRM_All LC(C) C  &paste_win 0 V       &kp B                    &kp N     &kp M            &kp COMMA         &kp DOT               &kp DE_MINUS     &strg_W
                                         &mo 5             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT  &mo 6
             >;
         };
