@@ -134,6 +134,15 @@
             require-prior-idle-ms = <150>;
             quick-tap-ms = <125>;
         };
+
+        F_KEY: F_KEY {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F_KEY";
+            bindings = <&kp F1>, <&kp F11>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -616,7 +625,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F7  &kp F8  &kp F9  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &F_KEY  &kp F2  &kp F3  &kp F10  &trans
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
 
