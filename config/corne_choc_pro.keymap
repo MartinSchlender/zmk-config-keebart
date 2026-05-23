@@ -628,31 +628,34 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &F11_for_F1  &kp F2  &kp F3  &kp F10  &trans
                         &trans  &trans  &trans                  &trans  &trans       &trans
             >;
+
+            label = "F-Keys";
         };
     };
 };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+conditional_layers {
+    compatible = "zmk,conditional-layers";
 
-        Mac_1_2_3 {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-
-        Windows_5_6_7 {
-            if-layers = <6 5>;
-            then-layer = <7>;
-        };
-
-        Bone_10_11_12 {
-            if-layers = <10 11>;
-            then-layer = <12>;
-        };
-
-        Bone_14_15_16 {
-            if-layers = <14 15>;
-            then-layer = <16>;
-        };
+    Mac_1_2_3 {
+        if-layers = <1 2>;
+        then-layer = <3>;
     };
+
+    Windows_5_6_7 {
+        if-layers = <6 5>;
+        then-layer = <7>;
+    };
+
+    Bone_10_11_12 {
+        if-layers = <10 11>;
+        then-layer = <12>;
+    };
+
+    Bone_14_15_16 {
+        if-layers = <14 15>;
+        then-layer = <16>;
+    };
+};
+
 };
