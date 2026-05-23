@@ -136,13 +136,13 @@
         };
 
         F11_for_F1: F11_for_F1 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "F11_FOR_F1";
-            bindings = <&kp F1>, <&kp F11>;
+    compatible = "zmk,behavior-mod-morph";
+    label = "F11_FOR_F1";
+    bindings = <&kp F1>, <&kp F10>;
 
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
     };
 
     macros {
