@@ -122,6 +122,27 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        HRM_Layer: HRM_Layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_LAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            quick-tap-ms = <125>;
+        };
+
+        F11_for_F1: F11_for_F1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F11_FOR_F1";
+            bindings = <&kp F1>, <&kp F11>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -408,10 +429,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U                 &kp I             &kp O                &kp P            &kp DE_U_UMLAUT
-&kp TAB     &kp A     &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &kp G      &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LCTRL K  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&CMD_Q      &kp DE_Y  &kp X                &HRM_All LG(C) C  &paste_mac 0 V       &kp B                    &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &gui_W
-                                           &mo 1             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT       &mo 2
+&kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T            &none  &none  &kp DE_Z  &kp U                 &kp I             &kp O                &kp P            &kp DE_U_UMLAUT
+&kp TAB     &kp A     &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &HRM_Layer 18 G  &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LCTRL K  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&CMD_Q      &kp DE_Y  &kp X                &HRM_All LG(C) C  &paste_mac 0 V       &kp B                          &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &gui_W
+                                           &mo 1             &kp LEFT_SHIFT       &kp SPACE                      &kp RET   &kp RIGHT_SHIFT       &mo 2
             >;
         };
 
@@ -462,10 +483,10 @@
         Win-0 {
             display-name = "Win ABC";
             bindings = <
-&strg_q  &kp Q     &kp W                &kp E             &kp R                &kp T      &none  &none  &kp DE_Z  &kp U            &kp I             &kp O                 &kp P            &kp DE_U_UMLAUT
-&kp TAB  &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &kp G      &none  &none  &kp H     &HRM_All LALT J  &HRM_All LCTRL K  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&Alt_F4  &kp DE_Y  &kp X                &HRM_All LC(C) C  &paste_win 0 V       &kp B                    &kp N     &kp M            &kp COMMA         &kp DOT               &kp DE_MINUS     &strg_W
-                                        &mo 5             &kp LEFT_SHIFT       &kp SPACE                &kp RET   &kp RIGHT_SHIFT  &mo 6
+&strg_q  &kp Q     &kp W                &kp E             &kp R                &kp T            &none  &none  &kp DE_Z  &kp U            &kp I             &kp O                 &kp P            &kp DE_U_UMLAUT
+&kp TAB  &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &HRM_Layer 18 G  &none  &none  &kp H     &HRM_All LALT J  &HRM_All LCTRL K  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&Alt_F4  &kp DE_Y  &kp X                &HRM_All LC(C) C  &paste_win 0 V       &kp B                          &kp N     &kp M            &kp COMMA         &kp DOT               &kp DE_MINUS     &strg_W
+                                        &mo 5             &kp LEFT_SHIFT       &kp SPACE                      &kp RET   &kp RIGHT_SHIFT  &mo 6
             >;
         };
 
@@ -512,7 +533,7 @@
         Bone-Mac-0 {
             bindings = <
 &kp ESCAPE  &kp J             &kp D                &kp U             &kp A                &kp X            &none  &none  &kp P     &kp H                 &kp L             &kp M                &kp W  &kp DE_MINUS
-&kp TAB     &HRM_All LG(C) C  &HRM_All LEFT_ALT T  &HRM_All LCTRL I  &HRM_All LEFT_GUI E  &kp O            &none  &none  &kp B     &HRM_All RIGHT_GUI N  &HRM_All LCTRL R  &HRM_All LEFT_ALT S  &kp G  &kp Q
+&kp TAB     &HRM_All LG(C) C  &HRM_All LEFT_ALT T  &HRM_All LCTRL I  &HRM_All LEFT_GUI E  &HRM_Layer 18 O  &none  &none  &kp B     &HRM_All RIGHT_GUI N  &HRM_All LCTRL R  &HRM_All LEFT_ALT S  &kp G  &kp Q
 &sl 17      &kp F             &paste_mac 0 V       &kp DE_U_UMLAUT   &kp DE_A_UMLAUT      &kp DE_O_UMLAUT                &kp DE_Y  &kp DE_Z              &kp COMMA         &kp DOT              &kp K  &gui_W
                                                    &mo 10            &kp LEFT_SHIFT       &kp SPACE                      &kp RET   &kp RIGHT_SHIFT       &mo 11
             >;
@@ -554,7 +575,7 @@
             label = "BWin-0";
             bindings = <
 &strg_q  &kp J             &kp D                &kp U             &kp A                &kp X            &none  &none  &kp P     &kp H                &kp L             &kp M                 &kp W  &kp DE_MINUS
-&kp TAB  &HRM_All LC(C) C  &HRM_All LEFT_GUI T  &HRM_All LCTRL I  &HRM_All LEFT_ALT E  &kp O            &none  &none  &kp B     &HRM_All LEFT_ALT N  &HRM_All LCTRL R  &HRM_All RIGHT_GUI S  &kp G  &kp Q
+&kp TAB  &HRM_All LC(C) C  &HRM_All LEFT_GUI T  &HRM_All LCTRL I  &HRM_All LEFT_ALT E  &HRM_Layer 18 O  &none  &none  &kp B     &HRM_All LEFT_ALT N  &HRM_All LCTRL R  &HRM_All RIGHT_GUI S  &kp G  &kp Q
 &sl 17   &kp F             &paste_win 0 V       &kp DE_U_UMLAUT   &kp DE_A_UMLAUT      &kp DE_O_UMLAUT                &kp DE_Y  &kp DE_Z             &kp COMMA         &kp DOT               &kp K  &strg_W
                                                 &mo 14            &kp LEFT_SHIFT       &kp SPACE                      &kp RET   &kp RIGHT_SHIFT      &mo 15
             >;
@@ -597,6 +618,15 @@
 &trans       &trans  &trans        &Macro_INNER_JOIN  &trans  &macro_order_by  &trans  &trans  &Macro_BH4SF  &trans  &trans            &Macro_SELECT  &macro_group_by  &rgb_ug RGB_EFF
 &CapsWord    &trans  &trans        &trans             &trans  &trans                           &trans        &trans  &trans            &trans         &trans           &rgb_ug RGB_EFR
                                    &trans             &trans  &trans                           &trans        &trans  &trans
+            >;
+        };
+
+        F-Keys {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F7       &kp F8  &kp F9  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F4       &kp F5  &kp F6  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &F11_for_F1  &kp F2  &kp F3  &kp F10  &trans
+                        &trans  &trans  &trans                  &trans  &trans       &trans
             >;
         };
     };
