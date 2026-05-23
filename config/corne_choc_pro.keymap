@@ -632,7 +632,7 @@
             label = "F-Keys";
         };
     };
-};
+
 
 conditional_layers {
     compatible = "zmk,conditional-layers";
