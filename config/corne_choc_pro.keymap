@@ -378,11 +378,10 @@
 
             label = "MACRO_EURO";
         };
-
         macro_caps_fix: macro_caps_fix {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&CapsWord &kp F24>;
+            bindings = <&kp F24>, <&CapsWord>;
             label = "MACRO_CAPS_FIX";
         };
 
