@@ -459,10 +459,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q     &kp W                &kp E             &kp R                &kp T            &none  &none  &kp DE_Z  &kp U                 &kp I             &kp O                &kp P            &kp DE_U_UMLAUT
-&kp TAB     &kp A     &HRM_All LEFT_ALT S  &HRM_All LCTRL D  &HRM_All LEFT_GUI F  &HRM_Layer 18 G  &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LCTRL K  &HRM_All LEFT_ALT L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&CMD_Q      &kp DE_Y  &kp X                &HRM_All LG(C) C  &paste_mac 0 V       &kp B                          &kp N     &kp M                 &kp COMMA         &kp DOT              &kp DE_MINUS     &gui_W
-                                           &mo 1             &kp LEFT_SHIFT       &kp SPACE                      &kp RET   &kp RIGHT_SHIFT       &mo 2
+&kp ESCAPE  &kp Q     &kp W             &kp E                &kp R                &kp T            &none  &none  &kp DE_Z  &kp U                 &kp I                &kp O             &kp P            &kp DE_U_UMLAUT
+&kp TAB     &kp A     &HRM_All LCTRL S  &HRM_All LEFT_ALT D  &HRM_All LEFT_GUI F  &HRM_Layer 18 G  &none  &none  &kp H     &HRM_All RIGHT_GUI J  &HRM_All LEFT_ALT K  &HRM_All LCTRL L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&CMD_Q      &kp DE_Y  &kp X             &HRM_All LG(C) C     &paste_mac 0 V       &kp B                          &kp N     &kp M                 &kp COMMA            &kp DOT           &kp DE_MINUS     &gui_W
+                                        &mo 1                &kp LEFT_SHIFT       &kp SPACE                      &kp RET   &kp RIGHT_SHIFT       &mo 2
             >;
         };
 
@@ -476,10 +476,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp LS(LA(NUMBER_7))  &kp LA(L)         &kp DE_DOUBLE_QUOTES        &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                       &kp N8                   &kp N9            &kp N0       &kp DE_SHARP_S
-&kp LA(NUMBER_7)      &kp LA(NUMBER_5)  &HRM_All LALT LA(NUMBER_6)  &HRM_All LCTRL DE_HASH   &kp LEFT_GUI              &kp DE_EURO     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All RIGHT_GUI NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RALT N6  &kp DE_PLUS  &kp DE_SLASH
-&kp LA(N)             &kp LA(NUMBER_8)  &kp LA(NUMBER_9)            &kp NON_US_BSLH          &kp LS(NON_US_BSLH)       &kp DE_PERCENT                &kp DE_AMPERSAND     &kp N1                       &kp N2                   &kp N3            &kp N0       &kp DE_ASTERISK
-                                                                    &trans                   &trans                    &trans                        &kp DE_EQUAL         &trans                       &trans
+&kp LS(LA(NUMBER_7))  &kp LA(L)         &kp DE_DOUBLE_QUOTES         &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                       &kp N8                  &kp N9             &kp N0       &kp DE_SHARP_S
+&kp LA(NUMBER_7)      &kp LA(NUMBER_5)  &HRM_All LCTRL LA(NUMBER_6)  &HRM_All LALT DE_HASH    &kp LEFT_GUI              &kp DE_EURO     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All RIGHT_GUI NUMBER_4  &HRM_All LALT NUMBER_5  &HRM_All RCTRL N6  &kp DE_PLUS  &kp DE_SLASH
+&kp LA(N)             &kp LA(NUMBER_8)  &kp LA(NUMBER_9)             &kp NON_US_BSLH          &kp LS(NON_US_BSLH)       &kp DE_PERCENT                &kp DE_AMPERSAND     &kp N1                       &kp N2                  &kp N3             &kp N0       &kp DE_ASTERISK
+                                                                     &trans                   &trans                    &trans                        &kp DE_EQUAL         &trans                       &trans
             >;
         };
 
@@ -493,10 +493,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 3  &kp F7                &kp F8             &kp F9            &kp F10                &none  &none  &kp C_PAUSE     &kp EXCL        &kp UP              &kp LG(UP)    &none                 &rgb_ug RGB_ON
-&bt BT_SEL 1  &bt BT_SEL 4  &HRM_All LEFT_ALT F4  &HRM_All LCTRL F5  &HRM_All LGUI F6  &kp LG(RIGHT_BRACKET)  &none  &none  &AI_Screenshot  &kp LEFT        &kp LG(LEFT_ARROW)  &kp RIGHT     &kp LG(RIGHT)         &rgb_ug RGB_OFF
-&bt BT_SEL 2  &bt BT_CLR    &kp F1                &kp F2             &kp F3            &kp LG(SLASH)                        &none           &kp LS(LA(N6))  &kp DOWN            &kp LG(DOWN)  &kp LS(LA(DE_ACUTE))  &kp DELETE
-                                                  &trans             &trans            &kp DE_QUESTION                      &trans          &trans          &trans
+&bt BT_SEL 0  &bt BT_SEL 3  &kp F7             &kp F8                &kp F9            &kp F10                &none  &none  &kp C_PAUSE     &kp EXCL        &kp UP              &kp LG(UP)    &none                 &rgb_ug RGB_ON
+&bt BT_SEL 1  &bt BT_SEL 4  &HRM_All LCTRL F4  &HRM_All LEFT_ALT F5  &HRM_All LGUI F6  &kp LG(RIGHT_BRACKET)  &none  &none  &AI_Screenshot  &kp LEFT        &kp LG(LEFT_ARROW)  &kp RIGHT     &kp LG(RIGHT)         &rgb_ug RGB_OFF
+&bt BT_SEL 2  &bt BT_CLR    &kp F1             &kp F2                &kp F3            &kp LG(SLASH)                        &none           &kp LS(LA(N6))  &kp DOWN            &kp LG(DOWN)  &kp LS(LA(DE_ACUTE))  &kp DELETE
+                                               &trans                &trans            &kp DE_QUESTION                      &trans          &trans          &trans
             >;
         };
 
@@ -513,30 +513,30 @@
         Win-0 {
             display-name = "Win ABC";
             bindings = <
-&strg_q  &kp Q     &kp W                &kp E             &kp R                &kp T            &none  &none  &kp DE_Z  &kp U            &kp I             &kp O                 &kp P            &kp DE_U_UMLAUT
-&kp TAB  &kp A     &HRM_All LEFT_GUI S  &HRM_All LCTRL D  &HRM_All LEFT_ALT F  &HRM_Layer 18 G  &none  &none  &kp H     &HRM_All LALT J  &HRM_All LCTRL K  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&Alt_F4  &kp DE_Y  &kp X                &HRM_All LC(C) C  &paste_win 0 V       &kp B                          &kp N     &kp M            &kp COMMA         &kp DOT               &kp DE_MINUS     &strg_W
-                                        &mo 5             &kp LEFT_SHIFT       &kp SPACE                      &kp RET   &kp RIGHT_SHIFT  &mo 6
+&strg_q  &kp Q     &kp W                &kp E                &kp R             &kp T            &none  &none  &kp DE_Z  &kp U             &kp I            &kp O                 &kp P            &kp DE_U_UMLAUT
+&kp TAB  &kp A     &HRM_All LEFT_GUI S  &HRM_All LEFT_ALT D  &HRM_All LCTRL F  &HRM_Layer 18 G  &none  &none  &kp H     &HRM_All LCTRL J  &HRM_All LALT K  &HRM_All RIGHT_GUI L  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&Alt_F4  &kp DE_Y  &kp X                &HRM_All LC(C) C     &paste_win 0 V    &kp B                          &kp N     &kp M             &kp COMMA        &kp DOT               &kp DE_MINUS     &strg_W
+                                        &mo 5                &kp LEFT_SHIFT    &kp SPACE                      &kp RET   &kp RIGHT_SHIFT   &mo 6
             >;
         };
 
         Win-1 {
             display-name = "Win 123";
             bindings = <
-&macro_DE_Backslash  &macro_DE_AT                 &kp DE_DOUBLE_QUOTES                     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                  &kp N8                   &kp N9                 &kp DE_CARET  &kp DE_SHARP_S
-&macro_DE_PIPE       &macro_DE_LeftCornerBracket  &HRM_Macro_Tap_Right_Bracket LEFT_GUI 0  &HRM_All LCTRL DE_HASH   &HRM_All LEFT_ALT INS     &macro_Euro     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All LALT NUMBER_4  &HRM_All RCTRL NUMBER_5  &HRM_All RIGHT_GUI N6  &kp DE_PLUS   &kp DE_SLASH
-&macro_Tilde         &macro_Left_Round_Bracket    &macro_Right_Round_Bracket               &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_PERCENT                &kp DE_AMPERSAND     &kp N1                  &kp N2                   &kp N3                 &kp N0        &kp DE_ASTERISK
-                                                                                           &trans                   &trans                    &trans                        &kp DE_EQUAL         &trans                  &trans
+&macro_DE_Backslash  &macro_DE_AT                 &kp DE_DOUBLE_QUOTES                     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOLLAR   &none  &none  &kp DE_ACUTE         &kp N7                   &kp N8                  &kp N9                 &kp DE_CARET  &kp DE_SHARP_S
+&macro_DE_PIPE       &macro_DE_LeftCornerBracket  &HRM_Macro_Tap_Right_Bracket LEFT_GUI 0  &HRM_All LEFT_ALT DE_HASH  &HRM_All LCTRL INS      &macro_Euro     &none  &none  &kp DE_SINGLE_QUOTE  &HRM_All RCTRL NUMBER_4  &HRM_All LALT NUMBER_5  &HRM_All RIGHT_GUI N6  &kp DE_PLUS   &kp DE_SLASH
+&macro_Tilde         &macro_Left_Round_Bracket    &macro_Right_Round_Bracket               &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_PERCENT                &kp DE_AMPERSAND     &kp N1                   &kp N2                  &kp N3                 &kp N0        &kp DE_ASTERISK
+                                                                                           &trans                   &trans                    &trans                        &kp DE_EQUAL         &trans                   &trans
             >;
         };
 
         Win-2 {
             display-name = "Win Fnn";
             bindings = <
-&none  &kp LA(F11)  &kp F7                &kp F8             &kp F9                &kp F10             &none  &none  &kp PAUSE_BREAK  &kp DE_EXCL   &kp UP    &kp LC(HOME)  &none          &rgb_ug RGB_ON
-&none  &kp LS(F8)   &HRM_All LEFT_GUI F4  &HRM_All LCTRL F5  &HRM_All LEFT_ALT F6  &mt LCTRL DE_PLUS   &none  &none  &kp PRINTSCREEN  &kp LEFT      &kp HOME  &kp RIGHT     &kp END        &rgb_ug RGB_OFF
-&none  &none        &kp F1                &kp F2             &kp F3                &mt LCTRL DE_MINUS                &none            &kp DE_CARET  &kp DOWN  &kp LC(END)   &kp DE_DEGREE  &kp DELETE
-                                          &trans             &trans                &kp DE_QUESTION                   &trans           &trans        &trans
+&none  &kp LA(F11)  &kp F7                &kp F8                &kp F9             &kp F10             &none  &none  &kp PAUSE_BREAK  &kp DE_EXCL   &kp UP    &kp LC(HOME)  &none          &rgb_ug RGB_ON
+&none  &kp LS(F8)   &HRM_All LEFT_GUI F4  &HRM_All LEFT_ALT F5  &HRM_All LCTRL F6  &mt LCTRL DE_PLUS   &none  &none  &kp PRINTSCREEN  &kp LEFT      &kp HOME  &kp RIGHT     &kp END        &rgb_ug RGB_OFF
+&none  &none        &kp F1                &kp F2                &kp F3             &mt LCTRL DE_MINUS                &none            &kp DE_CARET  &kp DOWN  &kp LC(END)   &kp DE_DEGREE  &kp DELETE
+                                          &trans                &trans             &kp DE_QUESTION                   &trans           &trans        &trans
             >;
         };
 
